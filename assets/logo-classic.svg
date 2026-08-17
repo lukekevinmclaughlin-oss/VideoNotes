@@ -1,0 +1,49 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="VideoNotes app icon">
+  <defs>
+    <linearGradient id="vn-bg" x1="64" y1="48" x2="448" y2="470" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5B54F0"/>
+      <stop offset="0.52" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#5B21B6"/>
+    </linearGradient>
+    <radialGradient id="vn-glow" cx="0.28" cy="0.16" r="0.9">
+      <stop offset="0" stop-color="#A5B4FC" stop-opacity="0.55"/>
+      <stop offset="0.45" stop-color="#818CF8" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#4C1D95" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vn-play" x1="132" y1="176" x2="256" y2="336" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E9E7FF"/>
+    </linearGradient>
+    <linearGradient id="vn-accent" x1="360" y1="122" x2="424" y2="182" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5EEAD4"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <filter id="vn-soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="9" stdDeviation="12" flood-color="#2E1065" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+
+  <!-- squircle backplate -->
+  <rect x="32" y="32" width="448" height="448" rx="116" fill="url(#vn-bg)"/>
+  <rect x="32" y="32" width="448" height="448" rx="116" fill="url(#vn-glow)"/>
+  <rect x="32.5" y="32.5" width="447" height="447" rx="115.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="1.5"/>
+
+  <!-- play triangle morphing into note lines: "watch, then take notes" -->
+  <g filter="url(#vn-soft)">
+    <path d="M132 176 L132 336 L256 258 Z"
+          fill="url(#vn-play)" stroke="url(#vn-play)" stroke-width="26" stroke-linejoin="round"/>
+    <g stroke="url(#vn-play)" stroke-width="27" stroke-linecap="round">
+      <line x1="284" y1="205" x2="396" y2="205"/>
+      <line x1="284" y1="256" x2="396" y2="256"/>
+      <line x1="284" y1="307" x2="360" y2="307"/>
+    </g>
+  </g>
+
+  <!-- AI spark = the "smart" in smart-convert -->
+  <path d="M392 122
+           C395 143 401 149 422 152
+           C401 155 395 161 392 182
+           C389 161 383 155 362 152
+           C383 149 389 143 392 122 Z"
+        fill="url(#vn-accent)"/>
+</svg>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApplicationProperties</key>
+	<dict>
+		<key>ApplicationPath</key>
+		<string>Applications/VideoNotes.app</string>
+		<key>Architectures</key>
+		<array>
+			<string>x86_64</string>
+			<string>arm64</string>
+		</array>
+		<key>CFBundleIdentifier</key>
+		<string>com.lukemclaughlin.videonotes</string>
+		<key>CFBundleShortVersionString</key>
+		<string>1.0</string>
+		<key>CFBundleVersion</key>
+		<string>1</string>
+		<key>SigningIdentity</key>
+		<string>Apple Development: Luke Mclaughlin (257L6H2S76)</string>
+		<key>Team</key>
+		<string>24UCS53598</string>
+	</dict>
+	<key>ArchiveVersion</key>
+	<integer>2</integer>
+	<key>CreationDate</key>
+	<date>2026-07-12T15:47:52Z</date>
+	<key>Distributions</key>
+	<array>
+		<dict>
+			<key>adamId</key>
+			<string>6790155362</string>
+			<key>certificateSHA1</key>
+			<string>D51FC7340C8D9908CFF7CC0C3EF68777309BCCEE</string>
+			<key>destination</key>
+			<string>upload</string>
+			<key>identifier</key>
+			<string>7e10071c-79f9-4f33-8797-542014659053</string>
+			<key>preparationEvent</key>
+			<dict>
+				<key>date</key>
+				<string>2026-07-12T15:53:44Z</string>
+				<key>errors</key>
+				<array/>
+				<key>infoMessages</key>
+				<array/>
+				<key>shortTitle</key>
+				<string>Prepared</string>
+				<key>state</key>
+				<string>success</string>
+				<key>title</key>
+				<string>Prepared archive for uploading</string>
+				<key>warnings</key>
+				<array/>
+			</dict>
+			<key>providerId</key>
+			<string>f6c24db6-c9ae-45df-baf2-1db052f300ef</string>
+			<key>task</key>
+			<string>distribute</string>
+			<key>teamID</key>
+			<string>24UCS53598</string>
+			<key>uploadDestination</key>
+			<string>App Store</string>
+			<key>uploadEvent</key>
+			<dict>
+				<key>date</key>
+				<string>2026-07-12T15:54:57Z</string>
+				<key>errors</key>
+				<array/>
+				<key>infoMessages</key>
+				<array/>
+				<key>shortTitle</key>
+				<string>Uploaded</string>
+				<key>state</key>
+				<string>success</string>
+				<key>title</key>
+				<string>Uploaded to Apple</string>
+				<key>warnings</key>
+				<array/>
+			</dict>
+			<key>uploadedBuildNumber</key>
+			<string>1</string>
+		</dict>
+	</array>
+	<key>Name</key>
+	<string>VideoNotes-macOS</string>
+	<key>SchemeName</key>
+	<string>VideoNotes-macOS</string>
+</dict>
+</plist>

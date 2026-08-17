@@ -1,0 +1,63 @@
+{
+  "identifier" : "9D3C41B5-06DB-4BB6-A02E-06C98BB3AB87",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_applicationInternalID" : "videonotes-local",
+    "_developerTeamID" : "24UCS53598",
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "9B78282A-C787-439A-ACB2-22167C43B69B",
+      "localizations" : [
+
+      ],
+      "name" : "VideoNotes Pro",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "9.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "B7A269A2-DF8B-4F54-AF84-0FCE4040449A",
+          "introductoryOffer" : {
+            "internalID" : "B4B22447-86DB-461D-AC2A-16DCAAB01738",
+            "numberOfPeriods" : 1,
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P1W"
+          },
+          "localizations" : [
+            {
+              "description" : "Private, source-cited illustrated notes from video and audio.",
+              "displayName" : "VideoNotes Pro Monthly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.lukemclaughlin.videonotes.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "VideoNotes Pro Monthly",
+          "subscriptionGroupID" : "9B78282A-C787-439A-ACB2-22167C43B69B"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

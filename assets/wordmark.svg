@@ -1,0 +1,32 @@
+<svg width="660" height="160" viewBox="0 0 660 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="VideoNotes">
+  <defs>
+    <radialGradient id="w-bg" cx="0.5" cy="0.4" r="0.75">
+      <stop offset="0" stop-color="#122A44"/><stop offset="0.6" stop-color="#0A1526"/><stop offset="1" stop-color="#05080F"/>
+    </radialGradient>
+    <radialGradient id="w-core" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFF4D6"/><stop offset="0.4" stop-color="#FFD37A"/><stop offset="0.75" stop-color="#FFB84D"/><stop offset="1" stop-color="#FF9E2C" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="w-text" x1="168" y1="60" x2="168" y2="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#0E7490"/>
+    </linearGradient>
+    <filter id="w-glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="1.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="w-soft" x="-90%" y="-90%" width="280%" height="280%"><feGaussianBlur stdDeviation="3.5"/></filter>
+  </defs>
+
+  <rect x="16" y="24" width="112" height="112" rx="29" fill="#070B14"/>
+  <rect x="16" y="24" width="112" height="112" rx="29" fill="url(#w-bg)"/>
+  <rect x="16.6" y="24.6" width="110.8" height="110.8" rx="28.4" fill="none" stroke="#3BE0F5" stroke-opacity="0.18" stroke-width="1"/>
+  <circle cx="72" cy="80" r="42" fill="none" stroke="#35E0F2" stroke-width="1" stroke-opacity="0.45"/>
+  <path d="M101.7 50.3 A42 42 0 1 1 42.3 50.3" fill="none" stroke="#6FF0FF" stroke-width="1.8" stroke-linecap="round" stroke-opacity="0.85" filter="url(#w-glow)"/>
+  <path d="M58 82 L58 108 L86 95 Z" fill="#35E0F2" fill-opacity="0.08" stroke="#6FF0FF" stroke-width="2" stroke-linejoin="round" stroke-opacity="0.9" filter="url(#w-glow)"/>
+  <circle cx="86" cy="95" r="9" fill="url(#w-core)" filter="url(#w-soft)"/>
+  <circle cx="58" cy="82" r="3.4" fill="#EBFEFF" stroke="#6FF0FF" stroke-width="1.6"/>
+  <circle cx="58" cy="108" r="3.4" fill="#EBFEFF" stroke="#6FF0FF" stroke-width="1.6"/>
+  <circle cx="86" cy="95" r="4.6" fill="#FFF7E0" stroke="#FFD37A" stroke-width="1.6" filter="url(#w-glow)"/>
+
+  <text x="156" y="99" font-family="'SF Pro Display','Inter','Helvetica Neue',Arial,sans-serif" font-size="60" font-weight="600" letter-spacing="-1.4">
+    <tspan fill="#0F172A">Video</tspan><tspan fill="url(#w-text)" font-weight="700">Notes</tspan>
+  </text>
+</svg>

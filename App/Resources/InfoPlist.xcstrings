@@ -1,0 +1,25 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "NSSpeechRecognitionUsageDescription": {
+      "comment": "Privacy usage description displayed by the operating system before speech recognition access.",
+      "extractionState": "manual",
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VideoNotes transkribiert deine Vorlesung auf diesem Gerät, um illustrierte Notizen zu erstellen. Audiodaten verlassen dein Gerät niemals."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VideoNotes transcribes your lecture on this device to build illustrated notes. Audio never leaves your device."
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
+

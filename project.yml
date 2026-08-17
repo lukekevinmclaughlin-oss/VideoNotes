@@ -1,0 +1,186 @@
+name: VideoNotes
+options:
+  bundleIdPrefix: com.lukemclaughlin
+  deploymentTarget:
+    macOS: "14.0"
+    iOS: "17.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.1"
+    CURRENT_PROJECT_VERSION: "122"
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: 24UCS53598
+    INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
+    INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: "VideoNotes transcribes your lecture on this device to build illustrated notes. Audio never leaves your device."
+    GENERATE_INFOPLIST_FILE: YES
+packages:
+  SketchnoteEngine:
+    path: Engine
+schemes:
+  VideoNotes-macOS:
+    build:
+      targets:
+        VideoNotes-macOS: all
+        VideoNotes-macOSTests: [test]
+    test:
+      config: Debug
+      storeKitConfiguration: Config/VideoNotes.storekit
+      targets:
+        - VideoNotes-macOSTests
+    run:
+      config: Debug
+      storeKitConfiguration: Config/VideoNotes.storekit
+  VideoNotes-iOS:
+    build:
+      targets:
+        VideoNotes-iOS: all
+        VideoNotes-iOSTests: [test]
+    test:
+      config: Debug
+      storeKitConfiguration: Config/VideoNotes.storekit
+      targets:
+        - VideoNotes-iOSTests
+    run:
+      config: Debug
+      storeKitConfiguration: Config/VideoNotes.storekit
+  VideoNotes-iOS-StoreKit:
+    build:
+      targets:
+        VideoNotes-iOS: all
+        VideoNotes-iOSStoreKitTests: [test]
+    test:
+      config: Debug
+      storeKitConfiguration: Config/VideoNotes.storekit
+      targets:
+        - VideoNotes-iOSStoreKitTests
+  VideoNotes-macOS-UI:
+    build:
+      targets:
+        VideoNotes-macOS: all
+        VideoNotes-macOSUITests: [test]
+    test:
+      config: Debug
+      targets:
+        - VideoNotes-macOSUITests
+  VideoNotes-iOS-UI:
+    build:
+      targets:
+        VideoNotes-iOS: all
+        VideoNotes-iOSUITests: [test]
+    test:
+      config: Debug
+      targets:
+        - VideoNotes-iOSUITests
+targets:
+  VideoNotes-macOS:
+    type: application
+    platform: macOS
+    sources:
+      - App/Sources
+      - App/Resources
+    dependencies:
+      - package: SketchnoteEngine
+    entitlements:
+      path: App/VideoNotes.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.files.user-selected.read-write: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lukemclaughlin.videonotes
+        PRODUCT_NAME: VideoNotes
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_HARDENED_RUNTIME: YES
+        INFOPLIST_KEY_CFBundleDisplayName: VideoNotes
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.education
+        INFOPLIST_KEY_NSHumanReadableCopyright: "© 2026 Luke McLaughlin"
+  VideoNotes-iOS:
+    type: application
+    platform: iOS
+    sources:
+      - App/Sources
+      - App/Resources
+    dependencies:
+      - package: SketchnoteEngine
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lukemclaughlin.videonotes
+        PRODUCT_NAME: VideoNotes
+        TARGETED_DEVICE_FAMILY: "1,2"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_CFBundleDisplayName: VideoNotes
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UIFileSharingEnabled: YES
+        INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+  VideoNotes-macOSTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - App/Tests
+      - path: Config/VideoNotes.storekit
+        buildPhase: resources
+    dependencies:
+      - target: VideoNotes-macOS
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lukemclaughlin.videonotes.macos.tests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/VideoNotes.app/Contents/MacOS/VideoNotes"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+  VideoNotes-iOSTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: App/Tests
+        excludes:
+          - StoreKitTests.swift
+    dependencies:
+      - target: VideoNotes-iOS
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lukemclaughlin.videonotes.ios.tests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/VideoNotes.app/VideoNotes"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+  VideoNotes-iOSStoreKitTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - App/Tests/StoreKitTests.swift
+      - path: Config/VideoNotes.storekit
+        buildPhase: resources
+    dependencies:
+      - target: VideoNotes-iOS
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lukemclaughlin.videonotes.ios.storekit.tests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/VideoNotes.app/VideoNotes"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+  VideoNotes-macOSUITests:
+    type: bundle.ui-testing
+    platform: macOS
+    sources:
+      - App/UITests
+    dependencies:
+      - target: VideoNotes-macOS
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lukemclaughlin.videonotes.macos.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_TARGET_NAME: VideoNotes-macOS
+  VideoNotes-iOSUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - App/UITests
+    dependencies:
+      - target: VideoNotes-iOS
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lukemclaughlin.videonotes.ios.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_TARGET_NAME: VideoNotes-iOS

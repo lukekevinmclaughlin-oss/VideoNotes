@@ -1,0 +1,1103 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09472E2D0AAFF4ECF07B6CE3 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 0C6BAA27414964909537CBD5 /* InfoPlist.xcstrings */; };
+		09BB2E31EFD89D228E556152 /* SemanticExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6917CC74128AC3EF14AA085D /* SemanticExport.swift */; };
+		204FF1B8B036F31746B5EBA0 /* VideoNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69BB785786E0CE849A99AE9 /* VideoNotesApp.swift */; };
+		22F679081131CE56BD01D5BD /* PatrickHand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AA336F69BE95F3C7017D2F6 /* PatrickHand-Regular.ttf */; };
+		28B0672143AF852B843B3BAF /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 0C6BAA27414964909537CBD5 /* InfoPlist.xcstrings */; };
+		2A0AD062C76523D606195CE6 /* VideoNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69BB785786E0CE849A99AE9 /* VideoNotesApp.swift */; };
+		30262EF2C7BF81A5E4262C4A /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DF6EA0CDB75F0476184EFB /* PaywallView.swift */; };
+		44A65290E066A015598F3D15 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C7A9DC59E59F632E9BA6B7FD /* Localizable.xcstrings */; };
+		47FF6CF49A7333D53B550D4E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F06132ADA9535A8B354046A /* Theme.swift */; };
+		4E71F932199CB1C517CD0D48 /* ProjectSnapshotStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3991532788690F118717173 /* ProjectSnapshotStore.swift */; };
+		5E567CAC22DDDA76C2C42CE6 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48DEDC34D6FB7BBC06DAC4E /* PurchaseManager.swift */; };
+		627385F952B2DBCFE03CADCE /* OFL-Caveat.txt in Resources */ = {isa = PBXBuildFile; fileRef = B9D26C06D000A29A476D650A /* OFL-Caveat.txt */; };
+		66D9B5B2A2AAAC7E90A560A7 /* StudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039DFEACB9C4F7AAE3132DDF /* StudioModel.swift */; };
+		6D1BDE393DC57B286A11369E /* StoreKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FD7EBFC4A54E1942F31E10 /* StoreKitTests.swift */; };
+		72EFFAD24A93D347490C837B /* ShantellSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 351FDC0A6CE9FB254C812A6A /* ShantellSans-Bold.ttf */; };
+		76E0101EC0C3C31E6E2AA545 /* VideoNotesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CB982FAB1A63C42D195F2D /* VideoNotesAppTests.swift */; };
+		7AC52C4AD68398D3005D2E4C /* VideoNotes.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 263C6A14C26235E506A9B91A /* VideoNotes.storekit */; };
+		7B0E9FCE601B69C3FE6264CF /* Caveat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3429904AA9A696731628DBD9 /* Caveat-Bold.ttf */; };
+		7C57208173773AF640E4BACA /* OFL-ShantellSans.txt in Resources */ = {isa = PBXBuildFile; fileRef = D4A08FB731C77208D7D4F3FA /* OFL-ShantellSans.txt */; };
+		851C3A3E49E2EAAD221EB527 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = ADDB10A23EB7CECEA6A2427B /* PrivacyInfo.xcprivacy */; };
+		888DA8A1F2A79104224334FB /* SketchnoteEngine in Frameworks */ = {isa = PBXBuildFile; productRef = 9E269F7BE6D26913D95FE35D /* SketchnoteEngine */; };
+		8B47A855BC51717942F3644F /* OFL-PatrickHand.txt in Resources */ = {isa = PBXBuildFile; fileRef = DB29B2495B69F52FE8455E90 /* OFL-PatrickHand.txt */; };
+		9C8298622031E5908E52854F /* VideoNotesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CB982FAB1A63C42D195F2D /* VideoNotesAppTests.swift */; };
+		9DC7DF8CCDDC19BBDA7A2C96 /* GroundingAuditAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3638145AF6C7C2331CCC697 /* GroundingAuditAppTests.swift */; };
+		9E3B778AF8B46B51C021DD3D /* ShantellSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 351FDC0A6CE9FB254C812A6A /* ShantellSans-Bold.ttf */; };
+		AE56AF273E565D4AA31846AA /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C7A9DC59E59F632E9BA6B7FD /* Localizable.xcstrings */; };
+		AFE99FF8716679749D5C14A8 /* StoreKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FD7EBFC4A54E1942F31E10 /* StoreKitTests.swift */; };
+		B3B3A1150C39640CDC62FDB8 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48DEDC34D6FB7BBC06DAC4E /* PurchaseManager.swift */; };
+		B3B4DDAE38B0C51AE7FC3A9F /* PatrickHand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AA336F69BE95F3C7017D2F6 /* PatrickHand-Regular.ttf */; };
+		B97CEE6EC4BC6B0F1EE10F30 /* Caveat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3429904AA9A696731628DBD9 /* Caveat-Bold.ttf */; };
+		C1E4B3656640BE44FD2E0D7A /* VideoNotes.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 263C6A14C26235E506A9B91A /* VideoNotes.storekit */; };
+		C2D6D9696CA62D132B7740E3 /* StudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039DFEACB9C4F7AAE3132DDF /* StudioModel.swift */; };
+		C8A95B5754E36F802CEA1EF3 /* VideoNotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B089B4A532615FCAAB188F11 /* VideoNotesUITests.swift */; };
+		D219DEF9315B8253584949BC /* VideoNotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B089B4A532615FCAAB188F11 /* VideoNotesUITests.swift */; };
+		D280E7C6C057017031ABFF57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11DC8A5A546B257CE807006D /* Assets.xcassets */; };
+		D37A949339C6BC2CC9F37F4F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F06132ADA9535A8B354046A /* Theme.swift */; };
+		D4C56D5014E528C8DCA8297D /* OFL-PatrickHand.txt in Resources */ = {isa = PBXBuildFile; fileRef = DB29B2495B69F52FE8455E90 /* OFL-PatrickHand.txt */; };
+		D7AE52F2252EEAF83F3FBAD2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E56C42336CC848B6E31173D /* ContentView.swift */; };
+		DA1069DFA27F297BE3925C45 /* OFL-Caveat.txt in Resources */ = {isa = PBXBuildFile; fileRef = B9D26C06D000A29A476D650A /* OFL-Caveat.txt */; };
+		DCF4CA1103FE64079E4E9883 /* SemanticExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6917CC74128AC3EF14AA085D /* SemanticExport.swift */; };
+		DF8C444D79820B464C0B412E /* ProjectSnapshotStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3991532788690F118717173 /* ProjectSnapshotStore.swift */; };
+		E2BCB3C138530D5C9D3009E8 /* SketchnoteEngine in Frameworks */ = {isa = PBXBuildFile; productRef = 5441046FC4EB684A3CA9F7D0 /* SketchnoteEngine */; };
+		E4D22D8C8F0CC8EFD6535375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11DC8A5A546B257CE807006D /* Assets.xcassets */; };
+		E753F1122B5C0B83AB421699 /* OFL-ShantellSans.txt in Resources */ = {isa = PBXBuildFile; fileRef = D4A08FB731C77208D7D4F3FA /* OFL-ShantellSans.txt */; };
+		EBE0A5E1873F5038378CCE18 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DF6EA0CDB75F0476184EFB /* PaywallView.swift */; };
+		F75BAA92C6913F0FE222ECD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E56C42336CC848B6E31173D /* ContentView.swift */; };
+		FD58F1810E8159FA8ABA65DC /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = ADDB10A23EB7CECEA6A2427B /* PrivacyInfo.xcprivacy */; };
+		FE233889EC42AA68A04B194D /* GroundingAuditAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3638145AF6C7C2331CCC697 /* GroundingAuditAppTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06D24E441CBC1C45365514A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D271474614A395E47D13E096 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C5EC5F8494DADC5F837E2B5;
+			remoteInfo = "VideoNotes-iOS";
+		};
+		13680AB9FEA49D26C3B2E2B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D271474614A395E47D13E096 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C5EC5F8494DADC5F837E2B5;
+			remoteInfo = "VideoNotes-iOS";
+		};
+		51892EFA5E104D400ED81A4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D271474614A395E47D13E096 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C5EC5F8494DADC5F837E2B5;
+			remoteInfo = "VideoNotes-iOS";
+		};
+		BB26E2CBD075FFE3313102CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D271474614A395E47D13E096 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32C02D39425A62EF9AD63A76;
+			remoteInfo = "VideoNotes-macOS";
+		};
+		EF7E30F45C2AA440D1A3A1EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D271474614A395E47D13E096 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32C02D39425A62EF9AD63A76;
+			remoteInfo = "VideoNotes-macOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		039DFEACB9C4F7AAE3132DDF /* StudioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioModel.swift; sourceTree = "<group>"; };
+		0C6BAA27414964909537CBD5 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		0F06132ADA9535A8B354046A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		11DC8A5A546B257CE807006D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AA336F69BE95F3C7017D2F6 /* PatrickHand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PatrickHand-Regular.ttf"; sourceTree = "<group>"; };
+		263C6A14C26235E506A9B91A /* VideoNotes.storekit */ = {isa = PBXFileReference; path = VideoNotes.storekit; sourceTree = "<group>"; };
+		28CB982FAB1A63C42D195F2D /* VideoNotesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoNotesAppTests.swift; sourceTree = "<group>"; };
+		2E56C42336CC848B6E31173D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3429904AA9A696731628DBD9 /* Caveat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Caveat-Bold.ttf"; sourceTree = "<group>"; };
+		351FDC0A6CE9FB254C812A6A /* ShantellSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ShantellSans-Bold.ttf"; sourceTree = "<group>"; };
+		480BC8A9060839661B587692 /* Engine */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Engine; path = Engine; sourceTree = SOURCE_ROOT; };
+		6917CC74128AC3EF14AA085D /* SemanticExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemanticExport.swift; sourceTree = "<group>"; };
+		8C98312B7987333772569805 /* VideoNotes-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VideoNotes-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EB4F73068B5DC976381FA20 /* VideoNotes-iOSUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "VideoNotes-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A69BB785786E0CE849A99AE9 /* VideoNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoNotesApp.swift; sourceTree = "<group>"; };
+		ADDB10A23EB7CECEA6A2427B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		AEC2D8116D9C7F7D9F978431 /* VideoNotes-iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "VideoNotes-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B089B4A532615FCAAB188F11 /* VideoNotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoNotesUITests.swift; sourceTree = "<group>"; };
+		B9D26C06D000A29A476D650A /* OFL-Caveat.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OFL-Caveat.txt"; sourceTree = "<group>"; };
+		B9DF6EA0CDB75F0476184EFB /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		C3991532788690F118717173 /* ProjectSnapshotStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSnapshotStore.swift; sourceTree = "<group>"; };
+		C7A9DC59E59F632E9BA6B7FD /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		D2336AD1630A08760165F5BF /* VideoNotes-iOSTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "VideoNotes-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A08FB731C77208D7D4F3FA /* OFL-ShantellSans.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OFL-ShantellSans.txt"; sourceTree = "<group>"; };
+		D86B6A0722B874EE49482BE7 /* VideoNotes-macOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VideoNotes-macOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB29B2495B69F52FE8455E90 /* OFL-PatrickHand.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OFL-PatrickHand.txt"; sourceTree = "<group>"; };
+		E3638145AF6C7C2331CCC697 /* GroundingAuditAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundingAuditAppTests.swift; sourceTree = "<group>"; };
+		EEA16360A32159EB6147B1E6 /* VideoNotes-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VideoNotes-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1FD7EBFC4A54E1942F31E10 /* StoreKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitTests.swift; sourceTree = "<group>"; };
+		F48DEDC34D6FB7BBC06DAC4E /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
+		FCA207E52287F08D7A90D3BA /* VideoNotes-iOSStoreKitTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "VideoNotes-iOSStoreKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34196296E8576E58D3A952A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2BCB3C138530D5C9D3009E8 /* SketchnoteEngine in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B06CB0744DED5F23C0D509E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				888DA8A1F2A79104224334FB /* SketchnoteEngine in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		287F8C5A10852BFC49B88011 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2E56C42336CC848B6E31173D /* ContentView.swift */,
+				B9DF6EA0CDB75F0476184EFB /* PaywallView.swift */,
+				C3991532788690F118717173 /* ProjectSnapshotStore.swift */,
+				F48DEDC34D6FB7BBC06DAC4E /* PurchaseManager.swift */,
+				6917CC74128AC3EF14AA085D /* SemanticExport.swift */,
+				039DFEACB9C4F7AAE3132DDF /* StudioModel.swift */,
+				0F06132ADA9535A8B354046A /* Theme.swift */,
+				A69BB785786E0CE849A99AE9 /* VideoNotesApp.swift */,
+			);
+			name = Sources;
+			path = App/Sources;
+			sourceTree = "<group>";
+		};
+		3134AE5EE2AC3D77B0156DF2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				11DC8A5A546B257CE807006D /* Assets.xcassets */,
+				0C6BAA27414964909537CBD5 /* InfoPlist.xcstrings */,
+				C7A9DC59E59F632E9BA6B7FD /* Localizable.xcstrings */,
+				ADDB10A23EB7CECEA6A2427B /* PrivacyInfo.xcprivacy */,
+				C5DC193DAC48E8D16CB66B37 /* Fonts */,
+			);
+			name = Resources;
+			path = App/Resources;
+			sourceTree = "<group>";
+		};
+		4741C043DC201B19FB4F0124 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				263C6A14C26235E506A9B91A /* VideoNotes.storekit */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		A93B839D092A5C1625B21474 = {
+			isa = PBXGroup;
+			children = (
+				4741C043DC201B19FB4F0124 /* Config */,
+				DB85A2067FCBA3EA130FE2DA /* Packages */,
+				3134AE5EE2AC3D77B0156DF2 /* Resources */,
+				287F8C5A10852BFC49B88011 /* Sources */,
+				EC85D13F6ABF28BC6FFB8D4D /* Tests */,
+				AF7943979C1FDCEC0F9FB5E9 /* UITests */,
+				E7653A4DA71EF8F7DCFA90AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF7943979C1FDCEC0F9FB5E9 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				B089B4A532615FCAAB188F11 /* VideoNotesUITests.swift */,
+			);
+			name = UITests;
+			path = App/UITests;
+			sourceTree = "<group>";
+		};
+		C5DC193DAC48E8D16CB66B37 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3429904AA9A696731628DBD9 /* Caveat-Bold.ttf */,
+				B9D26C06D000A29A476D650A /* OFL-Caveat.txt */,
+				DB29B2495B69F52FE8455E90 /* OFL-PatrickHand.txt */,
+				D4A08FB731C77208D7D4F3FA /* OFL-ShantellSans.txt */,
+				1AA336F69BE95F3C7017D2F6 /* PatrickHand-Regular.ttf */,
+				351FDC0A6CE9FB254C812A6A /* ShantellSans-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DB85A2067FCBA3EA130FE2DA /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				480BC8A9060839661B587692 /* Engine */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		E7653A4DA71EF8F7DCFA90AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEC2D8116D9C7F7D9F978431 /* VideoNotes-iOS.app */,
+				FCA207E52287F08D7A90D3BA /* VideoNotes-iOSStoreKitTests.xctest */,
+				D2336AD1630A08760165F5BF /* VideoNotes-iOSTests.xctest */,
+				8EB4F73068B5DC976381FA20 /* VideoNotes-iOSUITests.xctest */,
+				8C98312B7987333772569805 /* VideoNotes-macOS.app */,
+				EEA16360A32159EB6147B1E6 /* VideoNotes-macOSTests.xctest */,
+				D86B6A0722B874EE49482BE7 /* VideoNotes-macOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC85D13F6ABF28BC6FFB8D4D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E3638145AF6C7C2331CCC697 /* GroundingAuditAppTests.swift */,
+				F1FD7EBFC4A54E1942F31E10 /* StoreKitTests.swift */,
+				28CB982FAB1A63C42D195F2D /* VideoNotesAppTests.swift */,
+			);
+			name = Tests;
+			path = App/Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14E55DEA56E22E3EC0CB5264 /* VideoNotes-macOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CD81F98164C7F809B446745 /* Build configuration list for PBXNativeTarget "VideoNotes-macOSUITests" */;
+			buildPhases = (
+				986F63E2C5BD55A6DC3F4593 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD249731CB8A3DBB4628108F /* PBXTargetDependency */,
+			);
+			name = "VideoNotes-macOSUITests";
+			packageProductDependencies = (
+			);
+			productName = "VideoNotes-macOSUITests";
+			productReference = D86B6A0722B874EE49482BE7 /* VideoNotes-macOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		25A937389363CB608373471A /* VideoNotes-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C193D09816DBF0B9BCB2E2C /* Build configuration list for PBXNativeTarget "VideoNotes-iOSTests" */;
+			buildPhases = (
+				53FF4CDCCCE0DEF5C1F7C980 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3D4F7CA61E607DEE93AAB8F /* PBXTargetDependency */,
+			);
+			name = "VideoNotes-iOSTests";
+			packageProductDependencies = (
+			);
+			productName = "VideoNotes-iOSTests";
+			productReference = D2336AD1630A08760165F5BF /* VideoNotes-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		32C02D39425A62EF9AD63A76 /* VideoNotes-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88EF392B9AD3FC33AE031C04 /* Build configuration list for PBXNativeTarget "VideoNotes-macOS" */;
+			buildPhases = (
+				7523AD8FEF9261DB2FDDBE29 /* Sources */,
+				8DF9A85C071DECC696BD2329 /* Resources */,
+				34196296E8576E58D3A952A3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VideoNotes-macOS";
+			packageProductDependencies = (
+				5441046FC4EB684A3CA9F7D0 /* SketchnoteEngine */,
+			);
+			productName = "VideoNotes-macOS";
+			productReference = 8C98312B7987333772569805 /* VideoNotes-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40101330A975CF7820096799 /* VideoNotes-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E6247A950F5261A19E5CC38 /* Build configuration list for PBXNativeTarget "VideoNotes-iOSUITests" */;
+			buildPhases = (
+				4FC15E426301C99E8B166CB0 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				167CA5E8038F676795C410BA /* PBXTargetDependency */,
+			);
+			name = "VideoNotes-iOSUITests";
+			packageProductDependencies = (
+			);
+			productName = "VideoNotes-iOSUITests";
+			productReference = 8EB4F73068B5DC976381FA20 /* VideoNotes-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		6C5EC5F8494DADC5F837E2B5 /* VideoNotes-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1C5E73997E856EA6246C64F /* Build configuration list for PBXNativeTarget "VideoNotes-iOS" */;
+			buildPhases = (
+				9252F741A2CD7C00946F2993 /* Sources */,
+				ACA4DA47602482124EF2A2FC /* Resources */,
+				B06CB0744DED5F23C0D509E0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VideoNotes-iOS";
+			packageProductDependencies = (
+				9E269F7BE6D26913D95FE35D /* SketchnoteEngine */,
+			);
+			productName = "VideoNotes-iOS";
+			productReference = AEC2D8116D9C7F7D9F978431 /* VideoNotes-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74BD2E41199F7A74BCB05780 /* VideoNotes-macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ABE78FA41176FFCDC336135 /* Build configuration list for PBXNativeTarget "VideoNotes-macOSTests" */;
+			buildPhases = (
+				4BB80777C17D79CF3EEDEFA8 /* Sources */,
+				6FFEE39F93A7E39C0C4FFA1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C5DE0A16EC8F5A7548436F5 /* PBXTargetDependency */,
+			);
+			name = "VideoNotes-macOSTests";
+			packageProductDependencies = (
+			);
+			productName = "VideoNotes-macOSTests";
+			productReference = EEA16360A32159EB6147B1E6 /* VideoNotes-macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BBDC50CA86A565E84864CAD5 /* VideoNotes-iOSStoreKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1BFA5E201A4EA1D74BFF667 /* Build configuration list for PBXNativeTarget "VideoNotes-iOSStoreKitTests" */;
+			buildPhases = (
+				474D174003D7ECE5CD8C00FE /* Sources */,
+				BFE7A98B65CD3607EB3AECF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3F66BF9F4B7D0827CCFB0F7 /* PBXTargetDependency */,
+			);
+			name = "VideoNotes-iOSStoreKitTests";
+			packageProductDependencies = (
+			);
+			productName = "VideoNotes-iOSStoreKitTests";
+			productReference = FCA207E52287F08D7A90D3BA /* VideoNotes-iOSStoreKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D271474614A395E47D13E096 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					14E55DEA56E22E3EC0CB5264 = {
+						DevelopmentTeam = 24UCS53598;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 32C02D39425A62EF9AD63A76;
+					};
+					25A937389363CB608373471A = {
+						DevelopmentTeam = 24UCS53598;
+						ProvisioningStyle = Automatic;
+					};
+					32C02D39425A62EF9AD63A76 = {
+						DevelopmentTeam = 24UCS53598;
+						ProvisioningStyle = Automatic;
+					};
+					40101330A975CF7820096799 = {
+						DevelopmentTeam = 24UCS53598;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6C5EC5F8494DADC5F837E2B5;
+					};
+					6C5EC5F8494DADC5F837E2B5 = {
+						DevelopmentTeam = 24UCS53598;
+						ProvisioningStyle = Automatic;
+					};
+					74BD2E41199F7A74BCB05780 = {
+						DevelopmentTeam = 24UCS53598;
+						ProvisioningStyle = Automatic;
+					};
+					BBDC50CA86A565E84864CAD5 = {
+						DevelopmentTeam = 24UCS53598;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C751883B82E314F89BFBA7A4 /* Build configuration list for PBXProject "VideoNotes" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				de,
+				en,
+			);
+			mainGroup = A93B839D092A5C1625B21474;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BAFDD8626BCBF9AD6FA52D66 /* XCLocalSwiftPackageReference "Engine" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E7653A4DA71EF8F7DCFA90AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C5EC5F8494DADC5F837E2B5 /* VideoNotes-iOS */,
+				BBDC50CA86A565E84864CAD5 /* VideoNotes-iOSStoreKitTests */,
+				25A937389363CB608373471A /* VideoNotes-iOSTests */,
+				40101330A975CF7820096799 /* VideoNotes-iOSUITests */,
+				32C02D39425A62EF9AD63A76 /* VideoNotes-macOS */,
+				74BD2E41199F7A74BCB05780 /* VideoNotes-macOSTests */,
+				14E55DEA56E22E3EC0CB5264 /* VideoNotes-macOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6FFEE39F93A7E39C0C4FFA1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E4B3656640BE44FD2E0D7A /* VideoNotes.storekit in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DF9A85C071DECC696BD2329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D280E7C6C057017031ABFF57 /* Assets.xcassets in Resources */,
+				B97CEE6EC4BC6B0F1EE10F30 /* Caveat-Bold.ttf in Resources */,
+				09472E2D0AAFF4ECF07B6CE3 /* InfoPlist.xcstrings in Resources */,
+				AE56AF273E565D4AA31846AA /* Localizable.xcstrings in Resources */,
+				627385F952B2DBCFE03CADCE /* OFL-Caveat.txt in Resources */,
+				D4C56D5014E528C8DCA8297D /* OFL-PatrickHand.txt in Resources */,
+				7C57208173773AF640E4BACA /* OFL-ShantellSans.txt in Resources */,
+				22F679081131CE56BD01D5BD /* PatrickHand-Regular.ttf in Resources */,
+				FD58F1810E8159FA8ABA65DC /* PrivacyInfo.xcprivacy in Resources */,
+				72EFFAD24A93D347490C837B /* ShantellSans-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4DA47602482124EF2A2FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D22D8C8F0CC8EFD6535375 /* Assets.xcassets in Resources */,
+				7B0E9FCE601B69C3FE6264CF /* Caveat-Bold.ttf in Resources */,
+				28B0672143AF852B843B3BAF /* InfoPlist.xcstrings in Resources */,
+				44A65290E066A015598F3D15 /* Localizable.xcstrings in Resources */,
+				DA1069DFA27F297BE3925C45 /* OFL-Caveat.txt in Resources */,
+				8B47A855BC51717942F3644F /* OFL-PatrickHand.txt in Resources */,
+				E753F1122B5C0B83AB421699 /* OFL-ShantellSans.txt in Resources */,
+				B3B4DDAE38B0C51AE7FC3A9F /* PatrickHand-Regular.ttf in Resources */,
+				851C3A3E49E2EAAD221EB527 /* PrivacyInfo.xcprivacy in Resources */,
+				9E3B778AF8B46B51C021DD3D /* ShantellSans-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE7A98B65CD3607EB3AECF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AC52C4AD68398D3005D2E4C /* VideoNotes.storekit in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		474D174003D7ECE5CD8C00FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE99FF8716679749D5C14A8 /* StoreKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BB80777C17D79CF3EEDEFA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE233889EC42AA68A04B194D /* GroundingAuditAppTests.swift in Sources */,
+				6D1BDE393DC57B286A11369E /* StoreKitTests.swift in Sources */,
+				76E0101EC0C3C31E6E2AA545 /* VideoNotesAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FC15E426301C99E8B166CB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8A95B5754E36F802CEA1EF3 /* VideoNotesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53FF4CDCCCE0DEF5C1F7C980 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC7DF8CCDDC19BBDA7A2C96 /* GroundingAuditAppTests.swift in Sources */,
+				9C8298622031E5908E52854F /* VideoNotesAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7523AD8FEF9261DB2FDDBE29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7AE52F2252EEAF83F3FBAD2 /* ContentView.swift in Sources */,
+				30262EF2C7BF81A5E4262C4A /* PaywallView.swift in Sources */,
+				DF8C444D79820B464C0B412E /* ProjectSnapshotStore.swift in Sources */,
+				5E567CAC22DDDA76C2C42CE6 /* PurchaseManager.swift in Sources */,
+				DCF4CA1103FE64079E4E9883 /* SemanticExport.swift in Sources */,
+				C2D6D9696CA62D132B7740E3 /* StudioModel.swift in Sources */,
+				D37A949339C6BC2CC9F37F4F /* Theme.swift in Sources */,
+				2A0AD062C76523D606195CE6 /* VideoNotesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9252F741A2CD7C00946F2993 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F75BAA92C6913F0FE222ECD5 /* ContentView.swift in Sources */,
+				EBE0A5E1873F5038378CCE18 /* PaywallView.swift in Sources */,
+				4E71F932199CB1C517CD0D48 /* ProjectSnapshotStore.swift in Sources */,
+				B3B3A1150C39640CDC62FDB8 /* PurchaseManager.swift in Sources */,
+				09BB2E31EFD89D228E556152 /* SemanticExport.swift in Sources */,
+				66D9B5B2A2AAAC7E90A560A7 /* StudioModel.swift in Sources */,
+				47FF6CF49A7333D53B550D4E /* Theme.swift in Sources */,
+				204FF1B8B036F31746B5EBA0 /* VideoNotesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		986F63E2C5BD55A6DC3F4593 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D219DEF9315B8253584949BC /* VideoNotesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		167CA5E8038F676795C410BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C5EC5F8494DADC5F837E2B5 /* VideoNotes-iOS */;
+			targetProxy = 13680AB9FEA49D26C3B2E2B0 /* PBXContainerItemProxy */;
+		};
+		3C5DE0A16EC8F5A7548436F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32C02D39425A62EF9AD63A76 /* VideoNotes-macOS */;
+			targetProxy = EF7E30F45C2AA440D1A3A1EE /* PBXContainerItemProxy */;
+		};
+		CD249731CB8A3DBB4628108F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32C02D39425A62EF9AD63A76 /* VideoNotes-macOS */;
+			targetProxy = BB26E2CBD075FFE3313102CE /* PBXContainerItemProxy */;
+		};
+		D3D4F7CA61E607DEE93AAB8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C5EC5F8494DADC5F837E2B5 /* VideoNotes-iOS */;
+			targetProxy = 51892EFA5E104D400ED81A4D /* PBXContainerItemProxy */;
+		};
+		E3F66BF9F4B7D0827CCFB0F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C5EC5F8494DADC5F837E2B5 /* VideoNotes-iOS */;
+			targetProxy = 06D24E441CBC1C45365514A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0962ACF7B8B95781D31C4552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukemclaughlin.videonotes.ios.storekit.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoNotes.app/VideoNotes";
+			};
+			name = Debug;
+		};
+		0DFD97BBCC51E6F135DF56AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukemclaughlin.videonotes.ios.storekit.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoNotes.app/VideoNotes";
+			};
+			name = Release;
+		};
+		101972FB6A1798A9584A4A83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_KEY_CFBundleDisplayName = VideoNotes;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIFileSharingEnabled = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukemclaughlin.videonotes;
+				PRODUCT_NAME = VideoNotes;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		155C3772827F72F0141CC3FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukemclaughlin.videonotes.ios.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "VideoNotes-iOS";
+			};
+			name = Release;
+		};
+		2B3541E0B07507E2EED14C1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_KEY_CFBundleDisplayName = VideoNotes;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIFileSharingEnabled = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukemclaughlin.videonotes;
+				PRODUCT_NAME = VideoNotes;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		606535FA80BF0D5B1D38447B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukemclaughlin.videonotes.macos.uitests;
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = "VideoNotes-macOS";
+			};
+			name = Debug;
+		};
+		690CA2E29817F56EBE61137E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukemclaughlin.videonotes.ios.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoNotes.app/VideoNotes";
+			};
+			name = Release;
+		};
+		6F55E4BF4933569B892A37C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/VideoNotes.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = VideoNotes;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2026 Luke McLaughlin";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukemclaughlin.videonotes;
+				PRODUCT_NAME = VideoNotes;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8154D50A774BB09E9702AD81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukemclaughlin.videonotes.macos.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoNotes.app/Contents/MacOS/VideoNotes";
+			};
+			name = Debug;
+		};
+		82A417EC085666F984506982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 120;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 24UCS53598;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "VideoNotes transcribes your lecture on this device to build illustrated notes. Audio never leaves your device.";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8FB1ADAFB54FEA30FBF4B2E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukemclaughlin.videonotes.macos.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoNotes.app/Contents/MacOS/VideoNotes";
+			};
+			name = Release;
+		};
+		ABD826CAE53660EBC809C473 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 120;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 24UCS53598;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "VideoNotes transcribes your lecture on this device to build illustrated notes. Audio never leaves your device.";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BF05D1519FBCC8A0942920F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukemclaughlin.videonotes.macos.uitests;
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = "VideoNotes-macOS";
+			};
+			name = Release;
+		};
+		DA0E9E749A7D1A14C4EA7999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukemclaughlin.videonotes.ios.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoNotes.app/VideoNotes";
+			};
+			name = Debug;
+		};
+		F38B231AC6B2300C326BB65D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukemclaughlin.videonotes.ios.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "VideoNotes-iOS";
+			};
+			name = Debug;
+		};
+		FFBA7061283C251048AA4B43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/VideoNotes.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = VideoNotes;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2026 Luke McLaughlin";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukemclaughlin.videonotes;
+				PRODUCT_NAME = VideoNotes;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E6247A950F5261A19E5CC38 /* Build configuration list for PBXNativeTarget "VideoNotes-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F38B231AC6B2300C326BB65D /* Debug */,
+				155C3772827F72F0141CC3FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5ABE78FA41176FFCDC336135 /* Build configuration list for PBXNativeTarget "VideoNotes-macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8154D50A774BB09E9702AD81 /* Debug */,
+				8FB1ADAFB54FEA30FBF4B2E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7CD81F98164C7F809B446745 /* Build configuration list for PBXNativeTarget "VideoNotes-macOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				606535FA80BF0D5B1D38447B /* Debug */,
+				BF05D1519FBCC8A0942920F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		88EF392B9AD3FC33AE031C04 /* Build configuration list for PBXNativeTarget "VideoNotes-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFBA7061283C251048AA4B43 /* Debug */,
+				6F55E4BF4933569B892A37C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9C193D09816DBF0B9BCB2E2C /* Build configuration list for PBXNativeTarget "VideoNotes-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA0E9E749A7D1A14C4EA7999 /* Debug */,
+				690CA2E29817F56EBE61137E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A1BFA5E201A4EA1D74BFF667 /* Build configuration list for PBXNativeTarget "VideoNotes-iOSStoreKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0962ACF7B8B95781D31C4552 /* Debug */,
+				0DFD97BBCC51E6F135DF56AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C751883B82E314F89BFBA7A4 /* Build configuration list for PBXProject "VideoNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABD826CAE53660EBC809C473 /* Debug */,
+				82A417EC085666F984506982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D1C5E73997E856EA6246C64F /* Build configuration list for PBXNativeTarget "VideoNotes-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B3541E0B07507E2EED14C1F /* Debug */,
+				101972FB6A1798A9584A4A83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		BAFDD8626BCBF9AD6FA52D66 /* XCLocalSwiftPackageReference "Engine" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Engine;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5441046FC4EB684A3CA9F7D0 /* SketchnoteEngine */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SketchnoteEngine;
+		};
+		9E269F7BE6D26913D95FE35D /* SketchnoteEngine */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SketchnoteEngine;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D271474614A395E47D13E096 /* Project object */;
+}

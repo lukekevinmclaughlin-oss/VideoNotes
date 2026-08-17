@@ -1,0 +1,28 @@
+<svg width="640" height="160" viewBox="0 0 640 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="VideoNotes">
+  <defs>
+    <linearGradient id="vnw-bg" x1="16" y1="24" x2="120" y2="136" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5B54F0"/>
+      <stop offset="0.55" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#5B21B6"/>
+    </linearGradient>
+    <linearGradient id="vnw-accent" x1="92" y1="30" x2="120" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5EEAD4"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+
+  <!-- icon lockup -->
+  <rect x="16" y="24" width="112" height="112" rx="29" fill="url(#vnw-bg)"/>
+  <path d="M45 55 L45 105 L84 80 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="8" stroke-linejoin="round"/>
+  <g stroke="#FFFFFF" stroke-width="8.5" stroke-linecap="round">
+    <line x1="93" y1="64" x2="120" y2="64"/>
+    <line x1="93" y1="80" x2="120" y2="80"/>
+    <line x1="93" y1="96" x2="111" y2="96"/>
+  </g>
+  <path d="M112 34 C113.4 42 115.4 44 123 45.4 C115.4 46.8 113.4 48.8 112 56.8 C110.6 48.8 108.6 46.8 101 45.4 C108.6 44 110.6 42 112 34 Z" fill="url(#vnw-accent)"/>
+
+  <!-- wordmark -->
+  <text x="156" y="98" font-family="'SF Pro Display','Inter','Helvetica Neue',Arial,sans-serif" font-size="62" font-weight="600" letter-spacing="-1.5">
+    <tspan fill="#1E1B4B">Video</tspan><tspan fill="#7C3AED" font-weight="700">Notes</tspan>
+  </text>
+</svg>

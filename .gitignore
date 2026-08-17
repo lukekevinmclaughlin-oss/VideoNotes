@@ -1,0 +1,11 @@
+.DS_Store
+.build/
+DerivedData/
+*.xcresult
+*.xccovarchive
+*.xccovreport
+*.moved-aside
+VideoNotes.xcodeproj/project.xcworkspace/xcuserdata/
+VideoNotes.xcodeproj/xcuserdata/
+tmp/
+

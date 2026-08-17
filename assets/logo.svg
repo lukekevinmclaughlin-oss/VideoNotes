@@ -1,0 +1,77 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="VideoNotes app icon">
+  <defs>
+    <radialGradient id="j-bg" cx="0.5" cy="0.38" r="0.75">
+      <stop offset="0" stop-color="#122A44"/>
+      <stop offset="0.55" stop-color="#0A1526"/>
+      <stop offset="1" stop-color="#05080F"/>
+    </radialGradient>
+    <radialGradient id="j-core" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFF4D6"/>
+      <stop offset="0.35" stop-color="#FFD37A"/>
+      <stop offset="0.7" stop-color="#FFB84D"/>
+      <stop offset="1" stop-color="#FF9E2C" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="j-scan" x1="80" y1="256" x2="432" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#35E0F2" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#7CF3FF" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#35E0F2" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="j-glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="j-soft" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <clipPath id="j-disc"><circle cx="256" cy="256" r="176"/></clipPath>
+  </defs>
+
+  <rect x="32" y="32" width="448" height="448" rx="116" fill="#070B14"/>
+  <rect x="32" y="32" width="448" height="448" rx="116" fill="url(#j-bg)"/>
+  <rect x="32.5" y="32.5" width="447" height="447" rx="115.5" fill="none" stroke="#3BE0F5" stroke-opacity="0.16" stroke-width="1.5"/>
+
+  <g clip-path="url(#j-disc)">
+    <rect x="80" y="150" width="352" height="212" fill="#0B2A3A" opacity="0.35"/>
+    <rect x="80" y="250" width="352" height="12" fill="url(#j-scan)"/>
+    <rect x="80" y="246" width="352" height="2" fill="#CFFAFF" opacity="0.7"/>
+  </g>
+
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#2CC7DE" stroke-width="10" stroke-opacity="0.20" stroke-dasharray="2 15"/>
+  <circle cx="256" cy="256" r="176" fill="none" stroke="#35E0F2" stroke-width="1.5" stroke-opacity="0.5"/>
+  <circle cx="256" cy="256" r="120" fill="none" stroke="#35E0F2" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="1 7"/>
+
+  <path d="M367.7 144.3 A158 158 0 1 1 144.3 144.3" fill="none" stroke="#6FF0FF" stroke-width="3" stroke-linecap="round" stroke-opacity="0.85" filter="url(#j-glow)"/>
+  <path d="M150 116 l14 20 M362 116 l-14 20" stroke="#6FF0FF" stroke-width="3" stroke-linecap="round" stroke-opacity="0.7"/>
+
+  <g stroke="#3BE0F5" stroke-width="3" stroke-linecap="round" stroke-opacity="0.5" fill="none">
+    <path d="M70 128 V96 Q70 90 76 90 H104"/>
+    <path d="M442 128 V96 Q442 90 436 90 H408"/>
+    <path d="M70 384 V416 Q70 422 76 422 H104"/>
+    <path d="M442 384 V416 Q442 422 436 422 H408"/>
+  </g>
+
+  <g stroke="#4BE3F6" stroke-width="1" stroke-opacity="0.35" stroke-dasharray="2 5" fill="none">
+    <path d="M170 150 L212 200"/>
+    <path d="M150 250 L212 200"/>
+    <path d="M176 360 L212 312"/>
+    <path d="M300 150 L330 256"/>
+    <path d="M352 320 L330 256"/>
+    <path d="M120 300 L212 312"/>
+  </g>
+  <g fill="#6FF0FF" opacity="0.55">
+    <circle cx="170" cy="150" r="3.5"/><circle cx="150" cy="250" r="3"/>
+    <circle cx="176" cy="360" r="3.5"/><circle cx="300" cy="150" r="3"/>
+    <circle cx="352" cy="320" r="3.5"/><circle cx="120" cy="300" r="3"/>
+  </g>
+  <g fill="#9BF3FF" opacity="0.5">
+    <circle cx="392" cy="196" r="2"/><circle cx="110" cy="196" r="2"/>
+    <circle cx="256" cy="392" r="2"/><circle cx="336" cy="392" r="1.6"/><circle cx="150" cy="130" r="1.6"/>
+  </g>
+
+  <path d="M212 200 L212 312 L330 256 Z" fill="#35E0F2" fill-opacity="0.07" stroke="#6FF0FF" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.9" filter="url(#j-glow)"/>
+
+  <circle cx="330" cy="256" r="30" fill="url(#j-core)" filter="url(#j-soft)"/>
+  <circle cx="212" cy="200" r="7" fill="#EBFEFF" stroke="#6FF0FF" stroke-width="3" filter="url(#j-glow)"/>
+  <circle cx="212" cy="312" r="7" fill="#EBFEFF" stroke="#6FF0FF" stroke-width="3" filter="url(#j-glow)"/>
+  <circle cx="330" cy="256" r="11" fill="#FFF7E0" stroke="#FFD37A" stroke-width="3" filter="url(#j-glow)"/>
+</svg>

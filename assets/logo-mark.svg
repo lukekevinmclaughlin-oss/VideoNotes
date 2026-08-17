@@ -1,0 +1,27 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="VideoNotes mark">
+  <defs>
+    <radialGradient id="m-core" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFF4D6"/><stop offset="0.4" stop-color="#FFD37A"/>
+      <stop offset="0.75" stop-color="#FFB84D"/><stop offset="1" stop-color="#FF9E2C" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="m-glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="m-soft" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="4.5"/></filter>
+  </defs>
+
+  <circle cx="120" cy="120" r="104" fill="none" stroke="#35E0F2" stroke-width="1" stroke-opacity="0.35" stroke-dasharray="1 6"/>
+  <circle cx="120" cy="120" r="92" fill="none" stroke="#35E0F2" stroke-width="1.2" stroke-opacity="0.5"/>
+  <path d="M179.4 60.6 A84 84 0 1 1 60.6 60.6" fill="none" stroke="#6FF0FF" stroke-width="2.4" stroke-linecap="round" stroke-opacity="0.85" filter="url(#m-glow)"/>
+
+  <g stroke="#4BE3F6" stroke-width="0.9" stroke-opacity="0.35" stroke-dasharray="2 4" fill="none">
+    <path d="M80 66 L99 94"/><path d="M70 120 L99 94"/><path d="M84 172 L99 146"/><path d="M150 66 L155 120"/><path d="M168 152 L155 120"/>
+  </g>
+  <g fill="#6FF0FF" opacity="0.55"><circle cx="80" cy="66" r="2.4"/><circle cx="70" cy="120" r="2"/><circle cx="84" cy="172" r="2.4"/><circle cx="150" cy="66" r="2"/><circle cx="168" cy="152" r="2.4"/></g>
+
+  <path d="M99 94 L99 146 L155 120 Z" fill="#35E0F2" fill-opacity="0.08" stroke="#6FF0FF" stroke-width="2.4" stroke-linejoin="round" stroke-opacity="0.9" filter="url(#m-glow)"/>
+  <circle cx="155" cy="120" r="15" fill="url(#m-core)" filter="url(#m-soft)"/>
+  <circle cx="99" cy="94" r="4.5" fill="#EBFEFF" stroke="#6FF0FF" stroke-width="2" filter="url(#m-glow)"/>
+  <circle cx="99" cy="146" r="4.5" fill="#EBFEFF" stroke="#6FF0FF" stroke-width="2" filter="url(#m-glow)"/>
+  <circle cx="155" cy="120" r="6.5" fill="#FFF7E0" stroke="#FFD37A" stroke-width="2" filter="url(#m-glow)"/>
+</svg>

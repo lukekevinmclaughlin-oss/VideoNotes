@@ -1,0 +1,6 @@
+0|8|Train your own AI with a guided workspace for preparing models and datasets.
+8|17|Choose a base model, add training examples, and inspect the configuration before starting.
+17|27|The training dashboard shows live progress, loss metrics, and each completed checkpoint.
+27|37|Compare evaluation results to understand quality changes instead of relying on a single score.
+37|46|Export the trained model only after reviewing the evidence and the final evaluation.
+46|53|The result is a repeatable workflow from data preparation through verified deployment.
