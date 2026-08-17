@@ -185,6 +185,9 @@ final class StudioModel: ObservableObject {
     case illustrating
     case ready
     case failed(String)
+
+    /// True while the CPU-heavy pipeline is running.
+    var isProcessing: Bool { self == .analyzing || self == .illustrating }
   }
 
   @Published private(set) var phase: Phase = .empty
@@ -341,7 +344,7 @@ final class StudioModel: ObservableObject {
             guard let self, self.generation == gen else { return }
             self.stageText = Self.localizedPipelineMessage(stage: stage, message: message)
             switch stage {
-            case .probing, .transcribing:
+            case .probing, .transcribing, .preparingModel:
               self.stageIndex = 0
               self.scanProgress = nil
             case .scanning(let fraction):
@@ -913,6 +916,10 @@ final class StudioModel: ObservableObject {
         message.removing(prefix: "Transcribing ")?
         .removing(suffix: " of audio on device") ?? message
       return String(localized: "Transcribing \(duration) of audio on device")
+    case .preparingModel:
+      return String(
+        localized: "Preparing the on-device speech engine (one-time download, may take a few minutes)"
+      )
     case .scanning:
       if let counts = message.integerPair(after: "Finding meaningful scenes ") {
         return String(localized: "Finding meaningful scenes \(counts.first) of \(counts.second)")

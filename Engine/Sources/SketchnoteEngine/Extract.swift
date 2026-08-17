@@ -88,11 +88,31 @@ public enum MediaProbe {
 
 // MARK: - Transcription (on-device only; audio never leaves the machine)
 
+/// Coarse state the transcriber reports back to the UI while it works.
+public enum TranscriptionProgress: Sendable {
+  /// Recognition is actively producing results.
+  case transcribing
+  /// No results have arrived yet and enough time has passed that the OS is
+  /// almost certainly performing the one-time on-device speech-model
+  /// download. Surfacing this lets the UI stop pretending it is "transcribing"
+  /// and tell the user an install is happening.
+  case preparingModel
+}
+
 public enum Transcriber {
   /// Best-effort on-device transcription. Returns segments, or nil with a
   /// human-readable reason when transcription cannot run (no permission,
   /// no on-device model). Never sends audio to a server.
-  public static func transcribe(url: URL, locale: Locale = .current) async -> (
+  ///
+  /// `onProgress` fires with `.preparingModel` when the first recognition
+  /// callback has not arrived within a grace window (the OS is downloading the
+  /// on-device model on first use), and `.transcribing` once results flow. A
+  /// watchdog guarantees this call always returns — it can never hang forever
+  /// even if the model download stalls.
+  public static func transcribe(
+    url: URL, locale: Locale = .current,
+    onProgress: (@Sendable (TranscriptionProgress) -> Void)? = nil
+  ) async -> (
     segments: [TranscriptSegment]?, reason: String?
   ) {
     let status = await requestAuthorization()
@@ -121,29 +141,113 @@ public enum Transcriber {
     }
     let request = SFSpeechURLRecognitionRequest(url: url)
     request.requiresOnDeviceRecognition = true
-    request.shouldReportPartialResults = false
+    // Partial results give the watchdog a heartbeat, so it can tell a slow
+    // first-run model download (no callbacks at all) apart from active
+    // recognition (callbacks flowing). Finals are still collected as before.
+    request.shouldReportPartialResults = true
     request.addsPunctuation = true
     request.taskHint = .dictation
 
+    let cancellation = SpeechCancellationBox()
+    let monitor = ActivityMonitor()
     do {
-      let cancellation = SpeechCancellationBox()
       let segments: [TranscriptSegment] = try await withTaskCancellationHandler {
-        try await withCheckedThrowingContinuation { continuation in
-          let collector = TranscriptionCollector(continuation: continuation)
-          let task = recognizer.recognitionTask(with: request, delegate: collector)
-          collector.retain(task: task)
-          cancellation.install(task)
+        try await withThrowingTaskGroup(of: [TranscriptSegment].self) { group in
+          group.addTask {
+            try await withCheckedThrowingContinuation { continuation in
+              let collector = TranscriptionCollector(continuation: continuation, monitor: monitor)
+              let task = recognizer.recognitionTask(with: request, delegate: collector)
+              collector.retain(task: task)
+              cancellation.install(task)
+            }
+          }
+          group.addTask {
+            try await watchdog(monitor: monitor, onProgress: onProgress)
+          }
+          // Whichever finishes first wins: recognition returns segments, or the
+          // watchdog throws a timeout. Either way the other task is torn down.
+          let first = try await group.next()!
+          group.cancelAll()
+          cancellation.cancel()
+          return first
         }
       } onCancel: {
         cancellation.cancel()
       }
       return (segments.sorted { $0.start < $1.start }, nil)
+    } catch let timeout as TranscriptionTimeout {
+      cancellation.cancel()
+      return (nil, timeout.reason)
     } catch {
       if error is CancellationError || Task.isCancelled {
         return (nil, "Transcription was cancelled.")
       }
       return (nil, "Transcription failed: \(error.localizedDescription)")
     }
+  }
+
+  /// Monitors the recognition heartbeat and guarantees the transcribe call
+  /// terminates. Never returns normally — it either keeps waiting or throws.
+  private static func watchdog(
+    monitor: ActivityMonitor, onProgress: (@Sendable (TranscriptionProgress) -> Void)?
+  ) async throws -> [TranscriptSegment] {
+    let firstResultGrace: TimeInterval = 18  // no callback within this → likely model download
+    let maxPrepareWait: TimeInterval = 15 * 60  // hard ceiling: never hang forever
+    let stallTimeout: TimeInterval = 120  // callbacks started then went silent → stalled
+    let start = Date()
+    var announcedPreparing = false
+    while true {
+      try await Task.sleep(nanoseconds: 2_000_000_000)
+      let snapshot = await monitor.snapshot()
+      let now = Date()
+      if snapshot.started {
+        if announcedPreparing {
+          onProgress?(.transcribing)
+          announcedPreparing = false
+        }
+        if now.timeIntervalSince(snapshot.lastActivity) > stallTimeout {
+          throw TranscriptionTimeout.stalled
+        }
+      } else {
+        if !announcedPreparing, now.timeIntervalSince(start) > firstResultGrace {
+          announcedPreparing = true
+          onProgress?(.preparingModel)
+        }
+        if now.timeIntervalSince(start) > maxPrepareWait {
+          throw TranscriptionTimeout.preparingTimedOut
+        }
+      }
+    }
+  }
+
+  enum TranscriptionTimeout: Error {
+    case preparingTimedOut
+    case stalled
+    var reason: String {
+      switch self {
+      case .preparingTimedOut:
+        return
+          "The on-device speech model is still downloading. Please stay connected to the internet and try again in a few minutes."
+      case .stalled:
+        return "Transcription stopped unexpectedly. Please try again."
+      }
+    }
+  }
+
+  /// Tracks the last time the recognition task produced any output, so the
+  /// watchdog can distinguish "downloading model" from "actively working".
+  private actor ActivityMonitor {
+    struct Snapshot: Sendable {
+      var started: Bool
+      var lastActivity: Date
+    }
+    private var started = false
+    private var lastActivity = Date()
+    func touch() {
+      started = true
+      lastActivity = Date()
+    }
+    func snapshot() -> Snapshot { Snapshot(started: started, lastActivity: lastActivity) }
   }
 
   /// Select an exact locale when possible, otherwise a deterministic locale
@@ -238,9 +342,11 @@ public enum Transcriber {
     private var finals: [TranscriptSegment] = []
     private var task: SFSpeechRecognitionTask?
     private var selfRetain: TranscriptionCollector?
+    private let monitor: ActivityMonitor
 
-    init(continuation: CheckedContinuation<[TranscriptSegment], Error>) {
+    init(continuation: CheckedContinuation<[TranscriptSegment], Error>, monitor: ActivityMonitor) {
       self.continuation = continuation
+      self.monitor = monitor
       super.init()
       selfRetain = self
     }
@@ -250,6 +356,15 @@ public enum Transcriber {
       lock.unlock()
     }
 
+    // Any partial hypothesis is a heartbeat: recognition is running, not
+    // stuck downloading the model.
+    func speechRecognitionTask(
+      _ task: SFSpeechRecognitionTask, didHypothesizeTranscription transcription: SFTranscription
+    ) {
+      let monitor = monitor
+      Task { await monitor.touch() }
+    }
+
     func speechRecognitionTask(
       _ task: SFSpeechRecognitionTask, didFinishRecognition result: SFSpeechRecognitionResult
     ) {
@@ -257,6 +372,8 @@ public enum Transcriber {
       lock.lock()
       finals.append(contentsOf: segments)
       lock.unlock()
+      let monitor = monitor
+      Task { await monitor.touch() }
     }
     func speechRecognitionTask(
       _ task: SFSpeechRecognitionTask, didFinishSuccessfully successfully: Bool

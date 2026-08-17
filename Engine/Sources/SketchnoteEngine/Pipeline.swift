@@ -4,6 +4,7 @@ import Foundation
 public enum PipelineStage: Equatable, Sendable {
   case probing
   case transcribing
+  case preparingModel  // one-time on-device speech-model download on first use
   case scanning(Double)  // 0…1 within the scan
   case structuring
   case illustrating
@@ -34,10 +35,20 @@ public enum SketchnotePipeline {
     if let injectedTranscript {
       transcript = injectedTranscript
     } else if info.hasAudio {
-      progress(.transcribing, "Transcribing \(TimeFormat.mmss(info.duration)) of audio on device")
+      let durationLabel = TimeFormat.mmss(info.duration)
+      progress(.transcribing, "Transcribing \(durationLabel) of audio on device")
       let speechLocale = Transcriber.preferredLocale(
         requested: locale, sourceLanguageTag: info.languageTag)
-      let result = await Transcriber.transcribe(url: url, locale: speechLocale)
+      let result = await Transcriber.transcribe(url: url, locale: speechLocale) { state in
+        switch state {
+        case .preparingModel:
+          progress(
+            .preparingModel,
+            "Preparing the on-device speech engine (one-time download, may take a few minutes)")
+        case .transcribing:
+          progress(.transcribing, "Transcribing \(durationLabel) of audio on device")
+        }
+      }
       transcript = result.segments ?? []
       transcriptReason = result.reason
       try Task.checkCancellation()

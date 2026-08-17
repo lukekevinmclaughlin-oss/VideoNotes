@@ -22,6 +22,12 @@ enum VNTheme {
 /// Living HUD backdrop: deep gradient, drifting glow orbs, sparse rising
 /// particles and a faint grid. Freezes under Reduce Motion.
 struct HUDBackground: View {
+  /// When true, the expensive animated canvas is replaced by a static glow.
+  /// Callers set this while a file is being analyzed so the ambient animation
+  /// stops competing with transcription/rendering for CPU (and stops heating
+  /// the machine during the one job that actually needs the cores).
+  var reduceLoad: Bool = false
+
   @Environment(\.accessibilityReduceMotion) private var reduceMotion
   @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
   @Environment(\.scenePhase) private var scenePhase
@@ -31,12 +37,14 @@ struct HUDBackground: View {
       LinearGradient(
         colors: [VNTheme.abyss, VNTheme.void],
         startPoint: .topLeading, endPoint: .bottomTrailing)
-      if reduceMotion || reduceTransparency || scenePhase != .active
+      if reduceLoad || reduceMotion || reduceTransparency || scenePhase != .active
         || ProcessInfo.processInfo.isLowPowerModeEnabled
       {
         staticGlow
       } else {
-        TimelineView(.animation(minimumInterval: 1.0 / 30.0)) { timeline in
+        // 12fps is plenty for slow ambient orb/particle drift and roughly a
+        // third of the cost of the old 30fps loop.
+        TimelineView(.animation(minimumInterval: 1.0 / 12.0)) { timeline in
           let t = timeline.date.timeIntervalSinceReferenceDate
           Canvas { context, size in
             drawOrbs(context: &context, size: size, t: t)
