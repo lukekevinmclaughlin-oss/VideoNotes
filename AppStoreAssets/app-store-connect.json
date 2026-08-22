@@ -1,0 +1,1575 @@
+{
+  "app": {
+    "type": "apps",
+    "id": "6790155362",
+    "attributes": {
+      "accessibilityUrl": null,
+      "name": "VideoNotes: Lecture Study",
+      "bundleId": "com.lukemclaughlin.videonotes",
+      "sku": "videonotes-2026",
+      "primaryLocale": "en-US",
+      "isOrEverWasMadeForKids": false,
+      "subscriptionStatusUrl": null,
+      "subscriptionStatusUrlVersion": null,
+      "subscriptionStatusUrlForSandbox": null,
+      "subscriptionStatusUrlVersionForSandbox": null,
+      "contentRightsDeclaration": "USES_THIRD_PARTY_CONTENT",
+      "streamlinedPurchasingEnabled": true
+    },
+    "relationships": {
+      "accessibilityDeclarations": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/accessibilityDeclarations",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/accessibilityDeclarations"
+        }
+      },
+      "ciProduct": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/ciProduct",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/ciProduct"
+        }
+      },
+      "betaTesters": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/betaTesters"
+        }
+      },
+      "betaGroups": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/betaGroups",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/betaGroups"
+        }
+      },
+      "appStoreVersions": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/appStoreVersions",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/appStoreVersions"
+        }
+      },
+      "appTags": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/appTags",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/appTags"
+        }
+      },
+      "preReleaseVersions": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/preReleaseVersions",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/preReleaseVersions"
+        }
+      },
+      "betaAppLocalizations": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/betaAppLocalizations",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/betaAppLocalizations"
+        }
+      },
+      "builds": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/builds",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/builds"
+        }
+      },
+      "betaLicenseAgreement": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/betaLicenseAgreement",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/betaLicenseAgreement"
+        }
+      },
+      "betaAppReviewDetail": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/betaAppReviewDetail",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/betaAppReviewDetail"
+        }
+      },
+      "appInfos": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/appInfos",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/appInfos"
+        }
+      },
+      "appClips": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/appClips",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/appClips"
+        }
+      },
+      "appPricePoints": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/appPricePoints",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/appPricePoints"
+        }
+      },
+      "endUserLicenseAgreement": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/endUserLicenseAgreement",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/endUserLicenseAgreement"
+        }
+      },
+      "appPriceSchedule": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/appPriceSchedule",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/appPriceSchedule"
+        }
+      },
+      "appAvailabilityV2": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/appAvailabilityV2",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/appAvailabilityV2"
+        }
+      },
+      "inAppPurchases": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/inAppPurchases",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/inAppPurchases"
+        }
+      },
+      "subscriptionGroups": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/subscriptionGroups",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/subscriptionGroups"
+        }
+      },
+      "gameCenterEnabledVersions": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/gameCenterEnabledVersions",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/gameCenterEnabledVersions"
+        }
+      },
+      "perfPowerMetrics": {
+        "links": {
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/perfPowerMetrics"
+        }
+      },
+      "appCustomProductPages": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/appCustomProductPages",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/appCustomProductPages"
+        }
+      },
+      "inAppPurchasesV2": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/inAppPurchasesV2",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/inAppPurchasesV2"
+        }
+      },
+      "promotedPurchases": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/promotedPurchases",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/promotedPurchases"
+        }
+      },
+      "appEvents": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/appEvents",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/appEvents"
+        }
+      },
+      "reviewSubmissions": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/reviewSubmissions",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/reviewSubmissions"
+        }
+      },
+      "subscriptionGracePeriod": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/subscriptionGracePeriod",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/subscriptionGracePeriod"
+        }
+      },
+      "customerReviews": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/customerReviews",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/customerReviews"
+        }
+      },
+      "customerReviewSummarizations": {
+        "links": {
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/customerReviewSummarizations"
+        }
+      },
+      "gameCenterDetail": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/gameCenterDetail",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/gameCenterDetail"
+        }
+      },
+      "appStoreVersionExperimentsV2": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/appStoreVersionExperimentsV2",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/appStoreVersionExperimentsV2"
+        }
+      },
+      "alternativeDistributionKey": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/alternativeDistributionKey",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/alternativeDistributionKey"
+        }
+      },
+      "analyticsReportRequests": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/analyticsReportRequests",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/analyticsReportRequests"
+        }
+      },
+      "marketplaceSearchDetail": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/marketplaceSearchDetail",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/marketplaceSearchDetail"
+        }
+      },
+      "buildUploads": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/buildUploads",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/buildUploads"
+        }
+      },
+      "backgroundAssets": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/backgroundAssets",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/backgroundAssets"
+        }
+      },
+      "betaFeedbackScreenshotSubmissions": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/betaFeedbackScreenshotSubmissions",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/betaFeedbackScreenshotSubmissions"
+        }
+      },
+      "betaFeedbackCrashSubmissions": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/betaFeedbackCrashSubmissions",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/betaFeedbackCrashSubmissions"
+        }
+      },
+      "searchKeywords": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/searchKeywords",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/searchKeywords"
+        }
+      },
+      "webhooks": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/webhooks",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/webhooks"
+        }
+      },
+      "androidToIosAppMappingDetails": {
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/relationships/androidToIosAppMappingDetails",
+          "related": "https://api.appstoreconnect.apple.com/v1/apps/6790155362/androidToIosAppMappingDetails"
+        }
+      }
+    },
+    "links": {
+      "self": "https://api.appstoreconnect.apple.com/v1/apps/6790155362"
+    }
+  },
+  "appInfos": [
+    {
+      "type": "appInfos",
+      "id": "08f9b4d3-95c9-4b4c-8675-1fa93674d59c",
+      "attributes": {
+        "appStoreState": "READY_FOR_SALE",
+        "state": "READY_FOR_DISTRIBUTION",
+        "appStoreAgeRating": "FOUR_PLUS",
+        "australiaAgeRating": null,
+        "brazilAgeRating": "L",
+        "brazilAgeRatingV2": "SELF_RATED_L",
+        "franceAgeRating": null,
+        "koreaAgeRating": null
+      },
+      "relationships": {
+        "ageRatingDeclaration": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appInfos/08f9b4d3-95c9-4b4c-8675-1fa93674d59c/relationships/ageRatingDeclaration",
+            "related": "https://api.appstoreconnect.apple.com/v1/appInfos/08f9b4d3-95c9-4b4c-8675-1fa93674d59c/ageRatingDeclaration"
+          }
+        },
+        "appInfoLocalizations": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appInfos/08f9b4d3-95c9-4b4c-8675-1fa93674d59c/relationships/appInfoLocalizations",
+            "related": "https://api.appstoreconnect.apple.com/v1/appInfos/08f9b4d3-95c9-4b4c-8675-1fa93674d59c/appInfoLocalizations"
+          }
+        },
+        "primaryCategory": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appInfos/08f9b4d3-95c9-4b4c-8675-1fa93674d59c/relationships/primaryCategory",
+            "related": "https://api.appstoreconnect.apple.com/v1/appInfos/08f9b4d3-95c9-4b4c-8675-1fa93674d59c/primaryCategory"
+          }
+        },
+        "primarySubcategoryOne": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appInfos/08f9b4d3-95c9-4b4c-8675-1fa93674d59c/relationships/primarySubcategoryOne",
+            "related": "https://api.appstoreconnect.apple.com/v1/appInfos/08f9b4d3-95c9-4b4c-8675-1fa93674d59c/primarySubcategoryOne"
+          }
+        },
+        "primarySubcategoryTwo": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appInfos/08f9b4d3-95c9-4b4c-8675-1fa93674d59c/relationships/primarySubcategoryTwo",
+            "related": "https://api.appstoreconnect.apple.com/v1/appInfos/08f9b4d3-95c9-4b4c-8675-1fa93674d59c/primarySubcategoryTwo"
+          }
+        },
+        "secondaryCategory": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appInfos/08f9b4d3-95c9-4b4c-8675-1fa93674d59c/relationships/secondaryCategory",
+            "related": "https://api.appstoreconnect.apple.com/v1/appInfos/08f9b4d3-95c9-4b4c-8675-1fa93674d59c/secondaryCategory"
+          }
+        },
+        "secondarySubcategoryOne": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appInfos/08f9b4d3-95c9-4b4c-8675-1fa93674d59c/relationships/secondarySubcategoryOne",
+            "related": "https://api.appstoreconnect.apple.com/v1/appInfos/08f9b4d3-95c9-4b4c-8675-1fa93674d59c/secondarySubcategoryOne"
+          }
+        },
+        "secondarySubcategoryTwo": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appInfos/08f9b4d3-95c9-4b4c-8675-1fa93674d59c/relationships/secondarySubcategoryTwo",
+            "related": "https://api.appstoreconnect.apple.com/v1/appInfos/08f9b4d3-95c9-4b4c-8675-1fa93674d59c/secondarySubcategoryTwo"
+          }
+        },
+        "territoryAgeRatings": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appInfos/08f9b4d3-95c9-4b4c-8675-1fa93674d59c/relationships/territoryAgeRatings",
+            "related": "https://api.appstoreconnect.apple.com/v1/appInfos/08f9b4d3-95c9-4b4c-8675-1fa93674d59c/territoryAgeRatings"
+          }
+        }
+      },
+      "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/appInfos/08f9b4d3-95c9-4b4c-8675-1fa93674d59c"
+      },
+      "localizations": [
+        {
+          "type": "appInfoLocalizations",
+          "id": "eb24129b-dff5-4775-855a-8b4594ae3f21",
+          "attributes": {
+            "locale": "en-US",
+            "name": "VideoNotes: Lecture Study",
+            "subtitle": "Video to illustrated notes",
+            "privacyPolicyUrl": "https://github.com/lukekevinmclaughlin-oss/VideoNotes/blob/main/PRIVACY.md",
+            "privacyChoicesUrl": null,
+            "privacyPolicyText": null
+          },
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appInfoLocalizations/eb24129b-dff5-4775-855a-8b4594ae3f21"
+          }
+        }
+      ]
+    },
+    {
+      "type": "appInfos",
+      "id": "7540f0f7-af4b-4412-bcc8-2b14a7f13d56",
+      "attributes": {
+        "appStoreState": "REJECTED",
+        "state": "REJECTED",
+        "appStoreAgeRating": "FOUR_PLUS",
+        "australiaAgeRating": null,
+        "brazilAgeRating": "L",
+        "brazilAgeRatingV2": "SELF_RATED_L",
+        "franceAgeRating": null,
+        "koreaAgeRating": null
+      },
+      "relationships": {
+        "ageRatingDeclaration": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appInfos/7540f0f7-af4b-4412-bcc8-2b14a7f13d56/relationships/ageRatingDeclaration",
+            "related": "https://api.appstoreconnect.apple.com/v1/appInfos/7540f0f7-af4b-4412-bcc8-2b14a7f13d56/ageRatingDeclaration"
+          }
+        },
+        "appInfoLocalizations": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appInfos/7540f0f7-af4b-4412-bcc8-2b14a7f13d56/relationships/appInfoLocalizations",
+            "related": "https://api.appstoreconnect.apple.com/v1/appInfos/7540f0f7-af4b-4412-bcc8-2b14a7f13d56/appInfoLocalizations"
+          }
+        },
+        "primaryCategory": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appInfos/7540f0f7-af4b-4412-bcc8-2b14a7f13d56/relationships/primaryCategory",
+            "related": "https://api.appstoreconnect.apple.com/v1/appInfos/7540f0f7-af4b-4412-bcc8-2b14a7f13d56/primaryCategory"
+          }
+        },
+        "primarySubcategoryOne": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appInfos/7540f0f7-af4b-4412-bcc8-2b14a7f13d56/relationships/primarySubcategoryOne",
+            "related": "https://api.appstoreconnect.apple.com/v1/appInfos/7540f0f7-af4b-4412-bcc8-2b14a7f13d56/primarySubcategoryOne"
+          }
+        },
+        "primarySubcategoryTwo": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appInfos/7540f0f7-af4b-4412-bcc8-2b14a7f13d56/relationships/primarySubcategoryTwo",
+            "related": "https://api.appstoreconnect.apple.com/v1/appInfos/7540f0f7-af4b-4412-bcc8-2b14a7f13d56/primarySubcategoryTwo"
+          }
+        },
+        "secondaryCategory": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appInfos/7540f0f7-af4b-4412-bcc8-2b14a7f13d56/relationships/secondaryCategory",
+            "related": "https://api.appstoreconnect.apple.com/v1/appInfos/7540f0f7-af4b-4412-bcc8-2b14a7f13d56/secondaryCategory"
+          }
+        },
+        "secondarySubcategoryOne": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appInfos/7540f0f7-af4b-4412-bcc8-2b14a7f13d56/relationships/secondarySubcategoryOne",
+            "related": "https://api.appstoreconnect.apple.com/v1/appInfos/7540f0f7-af4b-4412-bcc8-2b14a7f13d56/secondarySubcategoryOne"
+          }
+        },
+        "secondarySubcategoryTwo": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appInfos/7540f0f7-af4b-4412-bcc8-2b14a7f13d56/relationships/secondarySubcategoryTwo",
+            "related": "https://api.appstoreconnect.apple.com/v1/appInfos/7540f0f7-af4b-4412-bcc8-2b14a7f13d56/secondarySubcategoryTwo"
+          }
+        },
+        "territoryAgeRatings": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appInfos/7540f0f7-af4b-4412-bcc8-2b14a7f13d56/relationships/territoryAgeRatings",
+            "related": "https://api.appstoreconnect.apple.com/v1/appInfos/7540f0f7-af4b-4412-bcc8-2b14a7f13d56/territoryAgeRatings"
+          }
+        }
+      },
+      "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/appInfos/7540f0f7-af4b-4412-bcc8-2b14a7f13d56"
+      },
+      "localizations": [
+        {
+          "type": "appInfoLocalizations",
+          "id": "4b5e3d93-f467-4619-8888-3bd9529db214",
+          "attributes": {
+            "locale": "en-US",
+            "name": "VideoNotes: Lecture Study",
+            "subtitle": "Video to illustrated notes",
+            "privacyPolicyUrl": "https://github.com/lukekevinmclaughlin-oss/VideoNotes/blob/main/PRIVACY.md",
+            "privacyChoicesUrl": null,
+            "privacyPolicyText": null
+          },
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appInfoLocalizations/4b5e3d93-f467-4619-8888-3bd9529db214"
+          }
+        }
+      ]
+    }
+  ],
+  "appStoreVersions": [
+    {
+      "type": "appStoreVersions",
+      "id": "3b1dc293-40cb-48d6-84e3-7c9bdcf44892",
+      "attributes": {
+        "platform": "IOS",
+        "versionString": "1.0",
+        "appStoreState": "REJECTED",
+        "appVersionState": "REJECTED",
+        "copyright": "© 2026 Luke McLaughlin",
+        "reviewType": "APP_STORE",
+        "releaseType": "AFTER_APPROVAL",
+        "earliestReleaseDate": null,
+        "usesIdfa": null,
+        "downloadable": true,
+        "createdDate": "2026-07-12T08:33:01-07:00"
+      },
+      "relationships": {
+        "appStoreVersionLocalizations": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/relationships/appStoreVersionLocalizations",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/appStoreVersionLocalizations"
+          }
+        },
+        "build": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/relationships/build",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/build"
+          }
+        },
+        "appStoreVersionPhasedRelease": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/relationships/appStoreVersionPhasedRelease",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/appStoreVersionPhasedRelease"
+          }
+        },
+        "gameCenterAppVersion": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/relationships/gameCenterAppVersion",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/gameCenterAppVersion"
+          }
+        },
+        "routingAppCoverage": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/relationships/routingAppCoverage",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/routingAppCoverage"
+          }
+        },
+        "appStoreReviewDetail": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/relationships/appStoreReviewDetail",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/appStoreReviewDetail"
+          }
+        },
+        "appStoreVersionSubmission": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/relationships/appStoreVersionSubmission",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/appStoreVersionSubmission"
+          }
+        },
+        "appClipDefaultExperience": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/relationships/appClipDefaultExperience",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/appClipDefaultExperience"
+          }
+        },
+        "appStoreVersionExperiments": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/relationships/appStoreVersionExperiments",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/appStoreVersionExperiments"
+          }
+        },
+        "appStoreVersionExperimentsV2": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/relationships/appStoreVersionExperimentsV2",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/appStoreVersionExperimentsV2"
+          }
+        },
+        "customerReviews": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/relationships/customerReviews",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/customerReviews"
+          }
+        },
+        "alternativeDistributionPackage": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/relationships/alternativeDistributionPackage",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892/alternativeDistributionPackage"
+          }
+        }
+      },
+      "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/3b1dc293-40cb-48d6-84e3-7c9bdcf44892"
+      },
+      "localizations": [
+        {
+          "type": "appStoreVersionLocalizations",
+          "id": "4bfb7b79-0c3c-4004-98e8-d116e52e432f",
+          "attributes": {
+            "description": "VideoNotes turns a recorded lecture into illustrated, source-cited study notes — without uploading the video or creating an account.\n\nFROM VIDEO TO NOTES, ON YOUR DEVICE\nImport a lecture, tutorial or talk (or just an audio recording). VideoNotes transcribes the speech, reads on-screen text from slides and boards with Vision OCR, selects the frames that actually carry information, and structures all of it into clean study notes with exact source timestamps.\n\nHAND-DRAWN SKETCHNOTE PAGES\nThe headline act: VideoNotes renders your notes as beautiful hand-drawn sketchnote pages — headings, key points, arrows, frames and diagrams in a warm, paper-like style with real hand-lettering fonts. Four palettes, deterministic output, and every page traceable back to the source moment it came from.\n\nEVIDENCE, NOT GUESSWORK\nVideoNotes treats extracted material as evidence: every cited card links to the exact frame or transcript time it came from. The searchable Evidence Inspector lets you filter by speech or OCR, preview the source at the cited moment, correct anything, and regenerate deterministically. Synthesized summaries are explicitly labeled for review.\n\n14 NOTE FORMATS\nThe same typed note model can be presented as Illustrated pages, Cornell Notes, a Hierarchical Outline, Q&A Flashcards, Exam Revision, a Timeline, Focus Cards, a Study Guide and more — every format preserves every section, nothing is silently dropped.\n\nSTUDY MODE\nBuilt-in spaced-repetition study cards (FSRS) turn your notes into a revision plan, and scrub-to-source jumps you back into the original video at the cited moment.\n\nEXPORT EVERYTHING\nTagged, searchable PDF with a pixel-identical text layer; PNG pages; Markdown; accessible HTML; plain text; structured JSON; DOCX; PPTX; EPUB; even Anki decks.\n\nPRIVATE BY DESIGN\nTranscription, OCR, structuring and sketch rendering all run on-device. No uploads, no account, no analytics.\n\nFREE TO USE - WITH A DAILY LIMIT\n\nVideoNotes is free to download and use, with no account or sign-in required. Every feature listed above is included in the free tier: transcription, slide OCR, all 14 note formats, hand-drawn sketchnotes, Study Mode and every export format.\n\nThe free tier covers 3 note generations per day. Once you have used those 3, further generations that day require VideoNotes Pro. Notes you have already made stay fully available, editable and exportable at no cost.\n\nVIDEONOTES PRO - OPTIONAL SUBSCRIPTION\n\nVideoNotes Pro removes the 3-per-day limit and gives unlimited note generation. It is an auto-renewable subscription.\n\n- VideoNotes Pro: $4.99 per month\n- New subscribers start with a 1-week free trial\n\nPayment is charged to your Apple Account at confirmation of purchase. The subscription renews automatically at $4.99 per month unless auto-renew is turned off at least 24 hours before the end of the current period. Your account is charged for renewal within 24 hours prior to the end of the current period. You can manage or cancel your subscription in your Apple Account settings after purchase. Any unused portion of a free trial period is forfeited when you purchase a subscription.\n\nTerms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nPrivacy Policy: https://www.lukekevinmclaughlin.com/privacy",
+            "locale": "en-US",
+            "keywords": "lecture,notes,video,study,sketchnotes,transcribe,student,ocr,summary,revision,flashcards",
+            "marketingUrl": null,
+            "promotionalText": "Turn lectures and talks into hand-drawn, source-cited study notes — transcribed, structured and sketched entirely on your device. First week free.",
+            "supportUrl": "https://www.lukekevinmclaughlin.com/support",
+            "whatsNew": null
+          },
+          "relationships": {
+            "appScreenshotSets": {
+              "links": {
+                "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/4bfb7b79-0c3c-4004-98e8-d116e52e432f/relationships/appScreenshotSets",
+                "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/4bfb7b79-0c3c-4004-98e8-d116e52e432f/appScreenshotSets"
+              }
+            },
+            "appPreviewSets": {
+              "links": {
+                "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/4bfb7b79-0c3c-4004-98e8-d116e52e432f/relationships/appPreviewSets",
+                "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/4bfb7b79-0c3c-4004-98e8-d116e52e432f/appPreviewSets"
+              }
+            },
+            "searchKeywords": {
+              "links": {
+                "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/4bfb7b79-0c3c-4004-98e8-d116e52e432f/relationships/searchKeywords",
+                "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/4bfb7b79-0c3c-4004-98e8-d116e52e432f/searchKeywords"
+              }
+            }
+          },
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/4bfb7b79-0c3c-4004-98e8-d116e52e432f"
+          },
+          "screenshotSets": [
+            {
+              "type": "appScreenshotSets",
+              "id": "e39f29f4-00ef-4b40-8e2c-34a367c2a400",
+              "attributes": {
+                "screenshotDisplayType": "APP_IPAD_PRO_3GEN_129"
+              },
+              "relationships": {
+                "appScreenshots": {
+                  "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/e39f29f4-00ef-4b40-8e2c-34a367c2a400/relationships/appScreenshots",
+                    "related": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/e39f29f4-00ef-4b40-8e2c-34a367c2a400/appScreenshots"
+                  }
+                }
+              },
+              "links": {
+                "self": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/e39f29f4-00ef-4b40-8e2c-34a367c2a400"
+              },
+              "screenshots": [
+                {
+                  "type": "appScreenshots",
+                  "id": "9d68e475-c418-4fb6-9e51-128d36892e5c",
+                  "attributes": {
+                    "fileSize": 1873808,
+                    "fileName": "01.png",
+                    "sourceFileChecksum": "92cf261077be29ff9fc35f6a35d80d88",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f1/95/2e/f1952e4a-6c2d-9a10-709d-7114ce1e1e5a/01.png/{w}x{h}bb.{f}",
+                      "width": 2064,
+                      "height": 2752
+                    },
+                    "assetToken": "PurpleSource221/v4/f1/95/2e/f1952e4a-6c2d-9a10-709d-7114ce1e1e5a/01.png",
+                    "assetType": "SortedJ320ScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  },
+                  "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/appScreenshots/9d68e475-c418-4fb6-9e51-128d36892e5c"
+                  }
+                },
+                {
+                  "type": "appScreenshots",
+                  "id": "6e3b4ad9-dcef-41ce-af3a-93c5b87301c1",
+                  "attributes": {
+                    "fileSize": 1509166,
+                    "fileName": "02.png",
+                    "sourceFileChecksum": "732c71dac66d7ab9d6b50c1c18b992fb",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0f/01/eb/0f01ebe5-9cc5-82bb-aa52-63995eb14856/02.png/{w}x{h}bb.{f}",
+                      "width": 2064,
+                      "height": 2752
+                    },
+                    "assetToken": "PurpleSource211/v4/0f/01/eb/0f01ebe5-9cc5-82bb-aa52-63995eb14856/02.png",
+                    "assetType": "SortedJ320ScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  },
+                  "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/appScreenshots/6e3b4ad9-dcef-41ce-af3a-93c5b87301c1"
+                  }
+                }
+              ],
+              "downloaded": [
+                {
+                  "id": "9d68e475-c418-4fb6-9e51-128d36892e5c",
+                  "filename": "01-01.png.png",
+                  "source": {
+                    "fileSize": 1873808,
+                    "fileName": "01.png",
+                    "sourceFileChecksum": "92cf261077be29ff9fc35f6a35d80d88",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f1/95/2e/f1952e4a-6c2d-9a10-709d-7114ce1e1e5a/01.png/{w}x{h}bb.{f}",
+                      "width": 2064,
+                      "height": 2752
+                    },
+                    "assetToken": "PurpleSource221/v4/f1/95/2e/f1952e4a-6c2d-9a10-709d-7114ce1e1e5a/01.png",
+                    "assetType": "SortedJ320ScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  }
+                },
+                {
+                  "id": "6e3b4ad9-dcef-41ce-af3a-93c5b87301c1",
+                  "filename": "02-02.png.png",
+                  "source": {
+                    "fileSize": 1509166,
+                    "fileName": "02.png",
+                    "sourceFileChecksum": "732c71dac66d7ab9d6b50c1c18b992fb",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0f/01/eb/0f01ebe5-9cc5-82bb-aa52-63995eb14856/02.png/{w}x{h}bb.{f}",
+                      "width": 2064,
+                      "height": 2752
+                    },
+                    "assetToken": "PurpleSource211/v4/0f/01/eb/0f01ebe5-9cc5-82bb-aa52-63995eb14856/02.png",
+                    "assetType": "SortedJ320ScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "appScreenshotSets",
+              "id": "6173ff6d-a6cf-47df-a33d-d63fe075353d",
+              "attributes": {
+                "screenshotDisplayType": "APP_IPHONE_65"
+              },
+              "relationships": {
+                "appScreenshots": {
+                  "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/6173ff6d-a6cf-47df-a33d-d63fe075353d/relationships/appScreenshots",
+                    "related": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/6173ff6d-a6cf-47df-a33d-d63fe075353d/appScreenshots"
+                  }
+                }
+              },
+              "links": {
+                "self": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/6173ff6d-a6cf-47df-a33d-d63fe075353d"
+              },
+              "screenshots": [
+                {
+                  "type": "appScreenshots",
+                  "id": "b01edce5-10d0-423e-9fe9-42da4010842d",
+                  "attributes": {
+                    "fileSize": 3555709,
+                    "fileName": "02.png",
+                    "sourceFileChecksum": "2bb58242038374bd60c9eb4aabade973",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/66/cc/68/66cc680a-da12-0bf6-7dd6-d74e11ad3f25/02.png/{w}x{h}bb.{f}",
+                      "width": 1284,
+                      "height": 2778
+                    },
+                    "assetToken": "PurpleSource221/v4/66/cc/68/66cc680a-da12-0bf6-7dd6-d74e11ad3f25/02.png",
+                    "assetType": "SortedD33ScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  },
+                  "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/appScreenshots/b01edce5-10d0-423e-9fe9-42da4010842d"
+                  }
+                },
+                {
+                  "type": "appScreenshots",
+                  "id": "3eff9a26-d92f-4231-bb90-ad922b97d7b6",
+                  "attributes": {
+                    "fileSize": 3703468,
+                    "fileName": "01.png",
+                    "sourceFileChecksum": "be79214ae0a1cd7a02f71cad1460ab6a",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/87/f9/64/87f964b9-ee10-40cd-f5dd-d39de80544f2/01.png/{w}x{h}bb.{f}",
+                      "width": 1284,
+                      "height": 2778
+                    },
+                    "assetToken": "PurpleSource211/v4/87/f9/64/87f964b9-ee10-40cd-f5dd-d39de80544f2/01.png",
+                    "assetType": "SortedD33ScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  },
+                  "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/appScreenshots/3eff9a26-d92f-4231-bb90-ad922b97d7b6"
+                  }
+                },
+                {
+                  "type": "appScreenshots",
+                  "id": "a9e4ed4e-3e73-414c-9929-27c910fa9be9",
+                  "attributes": {
+                    "fileSize": 3268648,
+                    "fileName": "03.png",
+                    "sourceFileChecksum": "2f72e141685e9a9ea22ca35c2154714c",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a5/d5/2d/a5d52dce-2c9a-c679-adb1-33ccf1e8958a/03.png/{w}x{h}bb.{f}",
+                      "width": 1284,
+                      "height": 2778
+                    },
+                    "assetToken": "PurpleSource211/v4/a5/d5/2d/a5d52dce-2c9a-c679-adb1-33ccf1e8958a/03.png",
+                    "assetType": "SortedD33ScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  },
+                  "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/appScreenshots/a9e4ed4e-3e73-414c-9929-27c910fa9be9"
+                  }
+                }
+              ],
+              "downloaded": [
+                {
+                  "id": "b01edce5-10d0-423e-9fe9-42da4010842d",
+                  "filename": "01-02.png.png",
+                  "source": {
+                    "fileSize": 3555709,
+                    "fileName": "02.png",
+                    "sourceFileChecksum": "2bb58242038374bd60c9eb4aabade973",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/66/cc/68/66cc680a-da12-0bf6-7dd6-d74e11ad3f25/02.png/{w}x{h}bb.{f}",
+                      "width": 1284,
+                      "height": 2778
+                    },
+                    "assetToken": "PurpleSource221/v4/66/cc/68/66cc680a-da12-0bf6-7dd6-d74e11ad3f25/02.png",
+                    "assetType": "SortedD33ScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  }
+                },
+                {
+                  "id": "3eff9a26-d92f-4231-bb90-ad922b97d7b6",
+                  "filename": "02-01.png.png",
+                  "source": {
+                    "fileSize": 3703468,
+                    "fileName": "01.png",
+                    "sourceFileChecksum": "be79214ae0a1cd7a02f71cad1460ab6a",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/87/f9/64/87f964b9-ee10-40cd-f5dd-d39de80544f2/01.png/{w}x{h}bb.{f}",
+                      "width": 1284,
+                      "height": 2778
+                    },
+                    "assetToken": "PurpleSource211/v4/87/f9/64/87f964b9-ee10-40cd-f5dd-d39de80544f2/01.png",
+                    "assetType": "SortedD33ScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  }
+                },
+                {
+                  "id": "a9e4ed4e-3e73-414c-9929-27c910fa9be9",
+                  "filename": "03-03.png.png",
+                  "source": {
+                    "fileSize": 3268648,
+                    "fileName": "03.png",
+                    "sourceFileChecksum": "2f72e141685e9a9ea22ca35c2154714c",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a5/d5/2d/a5d52dce-2c9a-c679-adb1-33ccf1e8958a/03.png/{w}x{h}bb.{f}",
+                      "width": 1284,
+                      "height": 2778
+                    },
+                    "assetToken": "PurpleSource211/v4/a5/d5/2d/a5d52dce-2c9a-c679-adb1-33ccf1e8958a/03.png",
+                    "assetType": "SortedD33ScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "appScreenshotSets",
+              "id": "04d7bc8d-b012-4349-9cb3-62183a208101",
+              "attributes": {
+                "screenshotDisplayType": "APP_IPHONE_67"
+              },
+              "relationships": {
+                "appScreenshots": {
+                  "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/04d7bc8d-b012-4349-9cb3-62183a208101/relationships/appScreenshots",
+                    "related": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/04d7bc8d-b012-4349-9cb3-62183a208101/appScreenshots"
+                  }
+                }
+              },
+              "links": {
+                "self": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/04d7bc8d-b012-4349-9cb3-62183a208101"
+              },
+              "screenshots": [
+                {
+                  "type": "appScreenshots",
+                  "id": "cee6a0c5-c65f-4383-a212-557ce4236a2e",
+                  "attributes": {
+                    "fileSize": 1583909,
+                    "fileName": "01.png",
+                    "sourceFileChecksum": "e1a11167b5b1d1fc3dc25e8e0d161653",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/15/89/b8/1589b876-0649-7b55-7984-6727fad10fe4/01.png/{w}x{h}bb.{f}",
+                      "width": 1320,
+                      "height": 2868
+                    },
+                    "assetToken": "PurpleSource221/v4/15/89/b8/1589b876-0649-7b55-7984-6727fad10fe4/01.png",
+                    "assetType": "SortedD74ScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  },
+                  "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/appScreenshots/cee6a0c5-c65f-4383-a212-557ce4236a2e"
+                  }
+                },
+                {
+                  "type": "appScreenshots",
+                  "id": "8490dd3e-5976-4c4e-92e8-aea42a31e055",
+                  "attributes": {
+                    "fileSize": 1252947,
+                    "fileName": "02.png",
+                    "sourceFileChecksum": "013fc79ca64ea2e3e8fc96474809083a",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e2/54/fc/e254fcf6-82b2-2184-f150-c7c92350d74a/02.png/{w}x{h}bb.{f}",
+                      "width": 1320,
+                      "height": 2868
+                    },
+                    "assetToken": "PurpleSource221/v4/e2/54/fc/e254fcf6-82b2-2184-f150-c7c92350d74a/02.png",
+                    "assetType": "SortedD74ScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  },
+                  "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/appScreenshots/8490dd3e-5976-4c4e-92e8-aea42a31e055"
+                  }
+                }
+              ],
+              "downloaded": [
+                {
+                  "id": "cee6a0c5-c65f-4383-a212-557ce4236a2e",
+                  "filename": "01-01.png.png",
+                  "source": {
+                    "fileSize": 1583909,
+                    "fileName": "01.png",
+                    "sourceFileChecksum": "e1a11167b5b1d1fc3dc25e8e0d161653",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/15/89/b8/1589b876-0649-7b55-7984-6727fad10fe4/01.png/{w}x{h}bb.{f}",
+                      "width": 1320,
+                      "height": 2868
+                    },
+                    "assetToken": "PurpleSource221/v4/15/89/b8/1589b876-0649-7b55-7984-6727fad10fe4/01.png",
+                    "assetType": "SortedD74ScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  }
+                },
+                {
+                  "id": "8490dd3e-5976-4c4e-92e8-aea42a31e055",
+                  "filename": "02-02.png.png",
+                  "source": {
+                    "fileSize": 1252947,
+                    "fileName": "02.png",
+                    "sourceFileChecksum": "013fc79ca64ea2e3e8fc96474809083a",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e2/54/fc/e254fcf6-82b2-2184-f150-c7c92350d74a/02.png/{w}x{h}bb.{f}",
+                      "width": 1320,
+                      "height": 2868
+                    },
+                    "assetToken": "PurpleSource221/v4/e2/54/fc/e254fcf6-82b2-2184-f150-c7c92350d74a/02.png",
+                    "assetType": "SortedD74ScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "appStoreVersions",
+      "id": "dabd23b4-2a01-4489-94c1-cf960fadb9f6",
+      "attributes": {
+        "platform": "MAC_OS",
+        "versionString": "1.1",
+        "appStoreState": "READY_FOR_SALE",
+        "appVersionState": "READY_FOR_DISTRIBUTION",
+        "copyright": "© 2026 Luke McLaughlin",
+        "reviewType": "APP_STORE",
+        "releaseType": "AFTER_APPROVAL",
+        "earliestReleaseDate": null,
+        "usesIdfa": null,
+        "downloadable": true,
+        "createdDate": "2026-07-21T04:27:31-07:00"
+      },
+      "relationships": {
+        "appStoreVersionLocalizations": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/relationships/appStoreVersionLocalizations",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/appStoreVersionLocalizations"
+          }
+        },
+        "build": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/relationships/build",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/build"
+          }
+        },
+        "appStoreVersionPhasedRelease": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/relationships/appStoreVersionPhasedRelease",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/appStoreVersionPhasedRelease"
+          }
+        },
+        "gameCenterAppVersion": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/relationships/gameCenterAppVersion",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/gameCenterAppVersion"
+          }
+        },
+        "routingAppCoverage": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/relationships/routingAppCoverage",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/routingAppCoverage"
+          }
+        },
+        "appStoreReviewDetail": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/relationships/appStoreReviewDetail",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/appStoreReviewDetail"
+          }
+        },
+        "appStoreVersionSubmission": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/relationships/appStoreVersionSubmission",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/appStoreVersionSubmission"
+          }
+        },
+        "appClipDefaultExperience": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/relationships/appClipDefaultExperience",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/appClipDefaultExperience"
+          }
+        },
+        "appStoreVersionExperiments": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/relationships/appStoreVersionExperiments",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/appStoreVersionExperiments"
+          }
+        },
+        "appStoreVersionExperimentsV2": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/relationships/appStoreVersionExperimentsV2",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/appStoreVersionExperimentsV2"
+          }
+        },
+        "customerReviews": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/relationships/customerReviews",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/customerReviews"
+          }
+        },
+        "alternativeDistributionPackage": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/relationships/alternativeDistributionPackage",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6/alternativeDistributionPackage"
+          }
+        }
+      },
+      "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/dabd23b4-2a01-4489-94c1-cf960fadb9f6"
+      },
+      "localizations": [
+        {
+          "type": "appStoreVersionLocalizations",
+          "id": "e3fce682-38e8-4c44-9068-29f9194eaf80",
+          "attributes": {
+            "description": "VideoNotes turns a recorded lecture into illustrated, source-cited study notes — without uploading the video or creating an account.\n\nFROM VIDEO TO NOTES, ON YOUR DEVICE\nImport a lecture, tutorial or talk (or just an audio recording). VideoNotes transcribes the speech, reads on-screen text from slides and boards with Vision OCR, selects the frames that actually carry information, and structures all of it into clean study notes with exact source timestamps.\n\nHAND-DRAWN SKETCHNOTE PAGES\nThe headline act: VideoNotes renders your notes as beautiful hand-drawn sketchnote pages — headings, key points, arrows, frames and diagrams in a warm, paper-like style with real hand-lettering fonts. Four palettes, deterministic output, and every page traceable back to the source moment it came from.\n\nEVIDENCE, NOT GUESSWORK\nVideoNotes treats extracted material as evidence: every cited card links to the exact frame or transcript time it came from. The searchable Evidence Inspector lets you filter by speech or OCR, preview the source at the cited moment, correct anything, and regenerate deterministically. Synthesized summaries are explicitly labeled for review.\n\n14 NOTE FORMATS\nThe same typed note model can be presented as Illustrated pages, Cornell Notes, a Hierarchical Outline, Q&A Flashcards, Exam Revision, a Timeline, Focus Cards, a Study Guide and more — every format preserves every section, nothing is silently dropped.\n\nSTUDY MODE\nBuilt-in spaced-repetition study cards (FSRS) turn your notes into a revision plan, and scrub-to-source jumps you back into the original video at the cited moment.\n\nEXPORT EVERYTHING\nTagged, searchable PDF with a pixel-identical text layer; PNG pages; Markdown; accessible HTML; plain text; structured JSON; DOCX; PPTX; EPUB; even Anki decks.\n\nPRIVATE BY DESIGN\nTranscription, OCR, structuring and sketch rendering all run on-device. No uploads, no account, no analytics.\n\nFREE TO USE\n\nVideoNotes is free to download and use, with no account or sign-in required. Transcription, illustrated notes, and hand-drawn sketches are generated entirely on your device.",
+            "locale": "en-US",
+            "keywords": "lecture,notes,video,study,sketchnotes,transcribe,student,ocr,summary,revision,flashcards",
+            "marketingUrl": null,
+            "promotionalText": null,
+            "supportUrl": "https://www.lukekevinmclaughlin.com/support",
+            "whatsNew": "This update includes bug fixes and performance improvements."
+          },
+          "relationships": {
+            "appScreenshotSets": {
+              "links": {
+                "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/e3fce682-38e8-4c44-9068-29f9194eaf80/relationships/appScreenshotSets",
+                "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/e3fce682-38e8-4c44-9068-29f9194eaf80/appScreenshotSets"
+              }
+            },
+            "appPreviewSets": {
+              "links": {
+                "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/e3fce682-38e8-4c44-9068-29f9194eaf80/relationships/appPreviewSets",
+                "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/e3fce682-38e8-4c44-9068-29f9194eaf80/appPreviewSets"
+              }
+            },
+            "searchKeywords": {
+              "links": {
+                "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/e3fce682-38e8-4c44-9068-29f9194eaf80/relationships/searchKeywords",
+                "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/e3fce682-38e8-4c44-9068-29f9194eaf80/searchKeywords"
+              }
+            }
+          },
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/e3fce682-38e8-4c44-9068-29f9194eaf80"
+          },
+          "screenshotSets": [
+            {
+              "type": "appScreenshotSets",
+              "id": "65b2d253-7fcb-4ba8-8205-a7288a9dfb07",
+              "attributes": {
+                "screenshotDisplayType": "APP_DESKTOP"
+              },
+              "relationships": {
+                "appScreenshots": {
+                  "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/65b2d253-7fcb-4ba8-8205-a7288a9dfb07/relationships/appScreenshots",
+                    "related": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/65b2d253-7fcb-4ba8-8205-a7288a9dfb07/appScreenshots"
+                  }
+                }
+              },
+              "links": {
+                "self": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/65b2d253-7fcb-4ba8-8205-a7288a9dfb07"
+              },
+              "screenshots": [
+                {
+                  "type": "appScreenshots",
+                  "id": "9f4651d4-23e6-44f8-9985-c028d06ed634",
+                  "attributes": {
+                    "fileSize": 1964645,
+                    "fileName": "01.png",
+                    "sourceFileChecksum": "cba720fb3e869d90b17e6d5a337514eb",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e1/9c/d2/e19cd2bc-ac30-5a83-a136-823cfb0c8371/01.png/{w}x{h}bb.{f}",
+                      "width": 2880,
+                      "height": 1800
+                    },
+                    "assetToken": "PurpleSource211/v4/e1/9c/d2/e19cd2bc-ac30-5a83-a136-823cfb0c8371/01.png",
+                    "assetType": "SortedDesktopScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  },
+                  "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/appScreenshots/9f4651d4-23e6-44f8-9985-c028d06ed634"
+                  }
+                },
+                {
+                  "type": "appScreenshots",
+                  "id": "136e0eec-5642-4b86-8609-7bb6571c0d6d",
+                  "attributes": {
+                    "fileSize": 1804459,
+                    "fileName": "02.png",
+                    "sourceFileChecksum": "bc231cc4170807be4bb7a2ba3c444b0c",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c4/7b/b2/c47bb286-0f63-cf8e-d6ee-e012fa6e5edd/02.png/{w}x{h}bb.{f}",
+                      "width": 2880,
+                      "height": 1800
+                    },
+                    "assetToken": "PurpleSource211/v4/c4/7b/b2/c47bb286-0f63-cf8e-d6ee-e012fa6e5edd/02.png",
+                    "assetType": "SortedDesktopScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  },
+                  "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/appScreenshots/136e0eec-5642-4b86-8609-7bb6571c0d6d"
+                  }
+                },
+                {
+                  "type": "appScreenshots",
+                  "id": "266bf71a-4b29-46cd-959d-2c735b1b779a",
+                  "attributes": {
+                    "fileSize": 1006628,
+                    "fileName": "03.png",
+                    "sourceFileChecksum": "f0c4129443da6ab170ca544fd3d0cf76",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/47/47/c9/4747c96d-ddf7-5366-769e-9460eecd137d/03.png/{w}x{h}bb.{f}",
+                      "width": 2880,
+                      "height": 1800
+                    },
+                    "assetToken": "PurpleSource221/v4/47/47/c9/4747c96d-ddf7-5366-769e-9460eecd137d/03.png",
+                    "assetType": "SortedDesktopScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  },
+                  "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/appScreenshots/266bf71a-4b29-46cd-959d-2c735b1b779a"
+                  }
+                }
+              ],
+              "downloaded": [
+                {
+                  "id": "9f4651d4-23e6-44f8-9985-c028d06ed634",
+                  "filename": "01-01.png.png",
+                  "source": {
+                    "fileSize": 1964645,
+                    "fileName": "01.png",
+                    "sourceFileChecksum": "cba720fb3e869d90b17e6d5a337514eb",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e1/9c/d2/e19cd2bc-ac30-5a83-a136-823cfb0c8371/01.png/{w}x{h}bb.{f}",
+                      "width": 2880,
+                      "height": 1800
+                    },
+                    "assetToken": "PurpleSource211/v4/e1/9c/d2/e19cd2bc-ac30-5a83-a136-823cfb0c8371/01.png",
+                    "assetType": "SortedDesktopScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  }
+                },
+                {
+                  "id": "136e0eec-5642-4b86-8609-7bb6571c0d6d",
+                  "filename": "02-02.png.png",
+                  "source": {
+                    "fileSize": 1804459,
+                    "fileName": "02.png",
+                    "sourceFileChecksum": "bc231cc4170807be4bb7a2ba3c444b0c",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c4/7b/b2/c47bb286-0f63-cf8e-d6ee-e012fa6e5edd/02.png/{w}x{h}bb.{f}",
+                      "width": 2880,
+                      "height": 1800
+                    },
+                    "assetToken": "PurpleSource211/v4/c4/7b/b2/c47bb286-0f63-cf8e-d6ee-e012fa6e5edd/02.png",
+                    "assetType": "SortedDesktopScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  }
+                },
+                {
+                  "id": "266bf71a-4b29-46cd-959d-2c735b1b779a",
+                  "filename": "03-03.png.png",
+                  "source": {
+                    "fileSize": 1006628,
+                    "fileName": "03.png",
+                    "sourceFileChecksum": "f0c4129443da6ab170ca544fd3d0cf76",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/47/47/c9/4747c96d-ddf7-5366-769e-9460eecd137d/03.png/{w}x{h}bb.{f}",
+                      "width": 2880,
+                      "height": 1800
+                    },
+                    "assetToken": "PurpleSource221/v4/47/47/c9/4747c96d-ddf7-5366-769e-9460eecd137d/03.png",
+                    "assetType": "SortedDesktopScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "appStoreVersions",
+      "id": "28adee6c-c6db-49ec-b983-7be9aa431b5f",
+      "attributes": {
+        "platform": "MAC_OS",
+        "versionString": "1.0",
+        "appStoreState": "READY_FOR_SALE",
+        "appVersionState": "READY_FOR_DISTRIBUTION",
+        "copyright": "© 2026 Luke McLaughlin",
+        "reviewType": "APP_STORE",
+        "releaseType": "AFTER_APPROVAL",
+        "earliestReleaseDate": null,
+        "usesIdfa": null,
+        "downloadable": true,
+        "createdDate": "2026-07-12T08:33:01-07:00"
+      },
+      "relationships": {
+        "appStoreVersionLocalizations": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/relationships/appStoreVersionLocalizations",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/appStoreVersionLocalizations"
+          }
+        },
+        "build": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/relationships/build",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/build"
+          }
+        },
+        "appStoreVersionPhasedRelease": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/relationships/appStoreVersionPhasedRelease",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/appStoreVersionPhasedRelease"
+          }
+        },
+        "gameCenterAppVersion": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/relationships/gameCenterAppVersion",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/gameCenterAppVersion"
+          }
+        },
+        "routingAppCoverage": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/relationships/routingAppCoverage",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/routingAppCoverage"
+          }
+        },
+        "appStoreReviewDetail": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/relationships/appStoreReviewDetail",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/appStoreReviewDetail"
+          }
+        },
+        "appStoreVersionSubmission": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/relationships/appStoreVersionSubmission",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/appStoreVersionSubmission"
+          }
+        },
+        "appClipDefaultExperience": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/relationships/appClipDefaultExperience",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/appClipDefaultExperience"
+          }
+        },
+        "appStoreVersionExperiments": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/relationships/appStoreVersionExperiments",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/appStoreVersionExperiments"
+          }
+        },
+        "appStoreVersionExperimentsV2": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/relationships/appStoreVersionExperimentsV2",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/appStoreVersionExperimentsV2"
+          }
+        },
+        "customerReviews": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/relationships/customerReviews",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/customerReviews"
+          }
+        },
+        "alternativeDistributionPackage": {
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/relationships/alternativeDistributionPackage",
+            "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f/alternativeDistributionPackage"
+          }
+        }
+      },
+      "links": {
+        "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersions/28adee6c-c6db-49ec-b983-7be9aa431b5f"
+      },
+      "localizations": [
+        {
+          "type": "appStoreVersionLocalizations",
+          "id": "3ff731bc-2782-4277-be81-22ddd4006b15",
+          "attributes": {
+            "description": "VideoNotes turns a recorded lecture into illustrated, source-cited study notes — without uploading the video or creating an account.\n\nFROM VIDEO TO NOTES, ON YOUR DEVICE\nImport a lecture, tutorial or talk (or just an audio recording). VideoNotes transcribes the speech, reads on-screen text from slides and boards with Vision OCR, selects the frames that actually carry information, and structures all of it into clean study notes with exact source timestamps.\n\nHAND-DRAWN SKETCHNOTE PAGES\nThe headline act: VideoNotes renders your notes as beautiful hand-drawn sketchnote pages — headings, key points, arrows, frames and diagrams in a warm, paper-like style with real hand-lettering fonts. Four palettes, deterministic output, and every page traceable back to the source moment it came from.\n\nEVIDENCE, NOT GUESSWORK\nVideoNotes treats extracted material as evidence: every cited card links to the exact frame or transcript time it came from. The searchable Evidence Inspector lets you filter by speech or OCR, preview the source at the cited moment, correct anything, and regenerate deterministically. Synthesized summaries are explicitly labeled for review.\n\n14 NOTE FORMATS\nThe same typed note model can be presented as Illustrated pages, Cornell Notes, a Hierarchical Outline, Q&A Flashcards, Exam Revision, a Timeline, Focus Cards, a Study Guide and more — every format preserves every section, nothing is silently dropped.\n\nSTUDY MODE\nBuilt-in spaced-repetition study cards (FSRS) turn your notes into a revision plan, and scrub-to-source jumps you back into the original video at the cited moment.\n\nEXPORT EVERYTHING\nTagged, searchable PDF with a pixel-identical text layer; PNG pages; Markdown; accessible HTML; plain text; structured JSON; DOCX; PPTX; EPUB; even Anki decks.\n\nPRIVATE BY DESIGN\nTranscription, OCR, structuring and sketch rendering all run on-device. No uploads, no account, no analytics.\n\nFREE TO USE\n\nVideoNotes is free to download and use, with no account or sign-in required. Transcription, illustrated notes, and hand-drawn sketches are generated entirely on your device.",
+            "locale": "en-US",
+            "keywords": "lecture,notes,video,study,sketchnotes,transcribe,student,ocr,summary,revision,flashcards",
+            "marketingUrl": null,
+            "promotionalText": "Turn lectures and talks into hand-drawn, source-cited study notes — transcribed, structured and sketched entirely on your device. First week free.",
+            "supportUrl": "https://www.lukekevinmclaughlin.com/support",
+            "whatsNew": null
+          },
+          "relationships": {
+            "appScreenshotSets": {
+              "links": {
+                "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/3ff731bc-2782-4277-be81-22ddd4006b15/relationships/appScreenshotSets",
+                "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/3ff731bc-2782-4277-be81-22ddd4006b15/appScreenshotSets"
+              }
+            },
+            "appPreviewSets": {
+              "links": {
+                "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/3ff731bc-2782-4277-be81-22ddd4006b15/relationships/appPreviewSets",
+                "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/3ff731bc-2782-4277-be81-22ddd4006b15/appPreviewSets"
+              }
+            },
+            "searchKeywords": {
+              "links": {
+                "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/3ff731bc-2782-4277-be81-22ddd4006b15/relationships/searchKeywords",
+                "related": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/3ff731bc-2782-4277-be81-22ddd4006b15/searchKeywords"
+              }
+            }
+          },
+          "links": {
+            "self": "https://api.appstoreconnect.apple.com/v1/appStoreVersionLocalizations/3ff731bc-2782-4277-be81-22ddd4006b15"
+          },
+          "screenshotSets": [
+            {
+              "type": "appScreenshotSets",
+              "id": "cc01aec9-bb91-40c1-8563-6486c9164b6d",
+              "attributes": {
+                "screenshotDisplayType": "APP_DESKTOP"
+              },
+              "relationships": {
+                "appScreenshots": {
+                  "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/cc01aec9-bb91-40c1-8563-6486c9164b6d/relationships/appScreenshots",
+                    "related": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/cc01aec9-bb91-40c1-8563-6486c9164b6d/appScreenshots"
+                  }
+                }
+              },
+              "links": {
+                "self": "https://api.appstoreconnect.apple.com/v1/appScreenshotSets/cc01aec9-bb91-40c1-8563-6486c9164b6d"
+              },
+              "screenshots": [
+                {
+                  "type": "appScreenshots",
+                  "id": "d38a5ccf-97a2-41df-93fa-30d891ab7525",
+                  "attributes": {
+                    "fileSize": 1964645,
+                    "fileName": "01.png",
+                    "sourceFileChecksum": "cba720fb3e869d90b17e6d5a337514eb",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e1/9c/d2/e19cd2bc-ac30-5a83-a136-823cfb0c8371/01.png/{w}x{h}bb.{f}",
+                      "width": 2880,
+                      "height": 1800
+                    },
+                    "assetToken": "PurpleSource211/v4/e1/9c/d2/e19cd2bc-ac30-5a83-a136-823cfb0c8371/01.png",
+                    "assetType": "SortedDesktopScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  },
+                  "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/appScreenshots/d38a5ccf-97a2-41df-93fa-30d891ab7525"
+                  }
+                },
+                {
+                  "type": "appScreenshots",
+                  "id": "0b43d35a-2f2b-4b53-b7be-fd00795c1f07",
+                  "attributes": {
+                    "fileSize": 1804459,
+                    "fileName": "02.png",
+                    "sourceFileChecksum": "bc231cc4170807be4bb7a2ba3c444b0c",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c4/7b/b2/c47bb286-0f63-cf8e-d6ee-e012fa6e5edd/02.png/{w}x{h}bb.{f}",
+                      "width": 2880,
+                      "height": 1800
+                    },
+                    "assetToken": "PurpleSource211/v4/c4/7b/b2/c47bb286-0f63-cf8e-d6ee-e012fa6e5edd/02.png",
+                    "assetType": "SortedDesktopScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  },
+                  "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/appScreenshots/0b43d35a-2f2b-4b53-b7be-fd00795c1f07"
+                  }
+                },
+                {
+                  "type": "appScreenshots",
+                  "id": "7d5a26cc-9618-42a5-aba4-035cbd540dcc",
+                  "attributes": {
+                    "fileSize": 1006628,
+                    "fileName": "03.png",
+                    "sourceFileChecksum": "f0c4129443da6ab170ca544fd3d0cf76",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/47/47/c9/4747c96d-ddf7-5366-769e-9460eecd137d/03.png/{w}x{h}bb.{f}",
+                      "width": 2880,
+                      "height": 1800
+                    },
+                    "assetToken": "PurpleSource221/v4/47/47/c9/4747c96d-ddf7-5366-769e-9460eecd137d/03.png",
+                    "assetType": "SortedDesktopScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  },
+                  "links": {
+                    "self": "https://api.appstoreconnect.apple.com/v1/appScreenshots/7d5a26cc-9618-42a5-aba4-035cbd540dcc"
+                  }
+                }
+              ],
+              "downloaded": [
+                {
+                  "id": "d38a5ccf-97a2-41df-93fa-30d891ab7525",
+                  "filename": "01-01.png.png",
+                  "source": {
+                    "fileSize": 1964645,
+                    "fileName": "01.png",
+                    "sourceFileChecksum": "cba720fb3e869d90b17e6d5a337514eb",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e1/9c/d2/e19cd2bc-ac30-5a83-a136-823cfb0c8371/01.png/{w}x{h}bb.{f}",
+                      "width": 2880,
+                      "height": 1800
+                    },
+                    "assetToken": "PurpleSource211/v4/e1/9c/d2/e19cd2bc-ac30-5a83-a136-823cfb0c8371/01.png",
+                    "assetType": "SortedDesktopScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  }
+                },
+                {
+                  "id": "0b43d35a-2f2b-4b53-b7be-fd00795c1f07",
+                  "filename": "02-02.png.png",
+                  "source": {
+                    "fileSize": 1804459,
+                    "fileName": "02.png",
+                    "sourceFileChecksum": "bc231cc4170807be4bb7a2ba3c444b0c",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c4/7b/b2/c47bb286-0f63-cf8e-d6ee-e012fa6e5edd/02.png/{w}x{h}bb.{f}",
+                      "width": 2880,
+                      "height": 1800
+                    },
+                    "assetToken": "PurpleSource211/v4/c4/7b/b2/c47bb286-0f63-cf8e-d6ee-e012fa6e5edd/02.png",
+                    "assetType": "SortedDesktopScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  }
+                },
+                {
+                  "id": "7d5a26cc-9618-42a5-aba4-035cbd540dcc",
+                  "filename": "03-03.png.png",
+                  "source": {
+                    "fileSize": 1006628,
+                    "fileName": "03.png",
+                    "sourceFileChecksum": "f0c4129443da6ab170ca544fd3d0cf76",
+                    "imageAsset": {
+                      "templateUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/47/47/c9/4747c96d-ddf7-5366-769e-9460eecd137d/03.png/{w}x{h}bb.{f}",
+                      "width": 2880,
+                      "height": 1800
+                    },
+                    "assetToken": "PurpleSource221/v4/47/47/c9/4747c96d-ddf7-5366-769e-9460eecd137d/03.png",
+                    "assetType": "SortedDesktopScreenShot",
+                    "uploadOperations": null,
+                    "assetDeliveryState": {
+                      "errors": [],
+                      "warnings": null,
+                      "state": "COMPLETE"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
