@@ -8,8 +8,12 @@ struct ContentView: View {
   @State private var showPaywall = false
   @EnvironmentObject private var model: StudioModel
   @EnvironmentObject private var purchase: PurchaseManager
+  @Environment(\.requestReview) private var requestReview
   @Environment(\.accessibilityReduceMotion) private var reduceMotion
   @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+  @AppStorage("hasShownIntroSubscriptionOffer") private var hasShownIntroSubscriptionOffer = false
+  @AppStorage("completedAnalysisCount") private var completedAnalysisCount = 0
+  @AppStorage("hasRequestedReviewAfterAnalysis") private var hasRequestedReview = false
   @State private var showImporter = false
   @State private var showPDFExporter = false
   @State private var showSemanticExporter = false
@@ -26,6 +30,7 @@ struct ContentView: View {
   @State private var showResetConfirmation = false
   @State private var scrolledPageID: Int?
   @State private var shuffleSpins = 0.0
+  @State private var recordedCurrentAnalysis = false
 
   static let mediaTypes: [UTType] = [
     .movie, .video, .mpeg4Movie, .quickTimeMovie,
@@ -39,6 +44,11 @@ struct ContentView: View {
     // Freemium: the workspace is always available; Pro gates volume, not entry.
     workspace
       .sheet(isPresented: $showPaywall) { PaywallView() }
+      .onChange(of: purchase.isLoadingEntitlement, initial: true) { _, loading in
+        guard !loading, !purchase.hasAccess, !hasShownIntroSubscriptionOffer else { return }
+        hasShownIntroSubscriptionOffer = true
+        showPaywall = true
+      }
   }
 
   private var workspace: some View {
@@ -190,9 +200,22 @@ struct ContentView: View {
     }
     .onAppear { model.applyDebugHooksOnLaunch() }
     .onChange(of: scrolledPageID) { _, new in if let new { model.currentPage = new } }
-    .onChange(of: model.sourceName) { _, _ in scrolledPageID = 0 }
+    .onChange(of: model.sourceName) { _, _ in
+      scrolledPageID = 0
+      recordedCurrentAnalysis = false
+    }
     .onChange(of: model.pageCount) { _, count in
       if count > 0, model.currentPage >= count { scrolledPageID = max(0, count - 1) }
+      guard count > 0, !recordedCurrentAnalysis else { return }
+      recordedCurrentAnalysis = true
+      completedAnalysisCount += 1
+      if completedAnalysisCount >= 2, !hasRequestedReview {
+        hasRequestedReview = true
+        Task {
+          try? await Task.sleep(for: .seconds(2))
+          requestReview()
+        }
+      }
     }
     .onChange(of: model.stageIndex) { _, index in
       guard model.phase == .analyzing || model.phase == .illustrating else { return }
@@ -437,7 +460,7 @@ struct ContentView: View {
     ("waveform", String(localized: "Listen")),
     ("viewfinder", String(localized: "Read")),
     ("square.stack.3d.up", String(localized: "Structure")),
-    ("paintbrush.pointed", String(localized: "Illustrate")),
+    ("doc.text", String(localized: "Compose")),
   ]
 
   private var progressState: some View {
@@ -674,15 +697,6 @@ struct ContentView: View {
     }
     let evidence = HStack(spacing: 8) {
       if let report = model.groundingReport {
-        if report.sourceIllustrations > 0 {
-          EvidencePill(
-            label: report.illustrationLabel,
-            icon: report.verifiedSourceIllustrations == report.sourceIllustrations
-              ? "checkmark.shield.fill" : "exclamationmark.triangle.fill",
-            tint: report.illustrationTint
-          )
-          .accessibilityIdentifier("source-illustration-trust")
-        }
         EvidencePill(
           label: report.coverageLabel, icon: report.coverageIcon, tint: report.coverageTint)
         EvidencePill(
@@ -697,7 +711,8 @@ struct ContentView: View {
         }
         if report.hasVisualEvidence {
           EvidencePill(
-            label: String(localized: "\(report.visualMoments) key scenes"), icon: "viewfinder",
+            label: String(localized: "\(report.visualMoments) on-screen texts"),
+            icon: "text.viewfinder",
             tint: VNTheme.gold)
         }
       }
@@ -748,7 +763,7 @@ struct ContentView: View {
               page: page, index: index,
               accessibilityTitle: model.readingPages.indices.contains(index)
                 ? model.readingPages[index].title
-                : String(localized: "Illustrated note page \(index + 1)"),
+                : String(localized: "Note page \(index + 1)"),
               entranceDelay: reduceMotion ? 0 : Double(min(index, 6)) * 0.05
             ) {
               zoomedPage = index

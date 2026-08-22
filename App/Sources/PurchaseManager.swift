@@ -232,8 +232,7 @@ final class PurchaseManager: ObservableObject {
         #if DIRECT_DISTRIBUTION
         active = true
         #endif
-    _ = active
-    hasAccess = true  // free: always unlocked, no subscription required
+    hasAccess = active
     isLoadingEntitlement = false
   }
 
