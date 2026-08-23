@@ -1,3 +1,4 @@
+#if !DIRECT_DISTRIBUTION
 import SwiftUI
 
 struct PaywallView: View {
@@ -108,3 +109,4 @@ struct PaywallView: View {
     }
   }
 }
+#endif
