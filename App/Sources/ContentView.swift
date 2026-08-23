@@ -330,6 +330,14 @@ struct ContentView: View {
             .buttonStyle(GlassButtonStyle()).accessibilityLabel("New analysis")
           }
           Button {
+            showPaywall = true
+          } label: {
+            Image(systemName: "crown.fill")
+          }
+          .buttonStyle(GlassButtonStyle(tint: VNTheme.cyan))
+          .accessibilityLabel("VideoNotes Pro subscription")
+          .accessibilityIdentifier("open-pro-subscription-button")
+          Button {
             showImporter = true
           } label: {
             Image(systemName: "plus")
@@ -387,6 +395,14 @@ struct ContentView: View {
         }
         .buttonStyle(GlassButtonStyle())
       }
+      Button {
+        showPaywall = true
+      } label: {
+        Label("Pro", systemImage: "crown.fill")
+      }
+      .buttonStyle(GlassButtonStyle(tint: VNTheme.cyan))
+      .accessibilityLabel("VideoNotes Pro subscription")
+      .accessibilityIdentifier("open-pro-subscription-button")
       Button {
         showImporter = true
       } label: {

@@ -19,6 +19,7 @@ final class VideoNotesUITests: XCTestCase {
 
     XCTAssertTrue(element("workspace").waitForExistence(timeout: 12))
     XCTAssertFalse(element("paywall").exists)
+    XCTAssertTrue(app.buttons["open-pro-subscription-button"].waitForExistence(timeout: 5))
     let chooseMedia = app.buttons["empty-import-button"]
     XCTAssertTrue(chooseMedia.waitForExistence(timeout: 5))
     XCTAssertTrue(chooseMedia.isEnabled)
