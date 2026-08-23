@@ -1,3 +1,22 @@
+#if DIRECT_DISTRIBUTION
+import Combine
+import Foundation
+
+/// The website edition is purchased once and is permanently unlocked.
+/// StoreKit is deliberately absent from this compilation branch.
+@MainActor
+final class PurchaseManager: ObservableObject {
+  static let shared = PurchaseManager()
+  static let dailyFreeAnalyses = 3
+
+  @Published private(set) var hasAccess = true
+  @Published private(set) var isLoadingEntitlement = false
+
+  private init() {}
+
+  func consumeFreeAnalysis() -> Bool { true }
+}
+#else
 import Foundation
 import StoreKit
 
@@ -285,3 +304,4 @@ extension PurchaseManager {
     return true
   }
 }
+#endif
