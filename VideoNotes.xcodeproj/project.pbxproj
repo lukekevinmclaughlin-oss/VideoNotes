@@ -413,7 +413,6 @@
 					};
 					32C02D39425A62EF9AD63A76 = {
 						DevelopmentTeam = 24UCS53598;
-						ProvisioningStyle = Automatic;
 					};
 					40101330A975CF7820096799 = {
 						DevelopmentTeam = 24UCS53598;
@@ -623,6 +622,31 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0431D138DCCC3659EA426D64 /* Direct */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/VideoNotes.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = VideoNotes;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2026 Luke McLaughlin";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukemclaughlin.videonotes.direct;
+				PRODUCT_NAME = VideoNotes;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DIRECT_DISTRIBUTION";
+			};
+			name = Direct;
+		};
 		0962ACF7B8B95781D31C4552 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -718,6 +742,23 @@
 			};
 			name = Debug;
 		};
+		318ECC07EFC78C3174FD6C01 /* Direct */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukemclaughlin.videonotes.ios.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoNotes.app/VideoNotes";
+			};
+			name = Direct;
+		};
 		606535FA80BF0D5B1D38447B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -751,6 +792,23 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoNotes.app/VideoNotes";
 			};
 			name = Release;
+		};
+		6F13F0E3103A258724B691A6 /* Direct */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukemclaughlin.videonotes.macos.uitests;
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = "VideoNotes-macOS";
+			};
+			name = Direct;
 		};
 		6F55E4BF4933569B892A37C0 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -852,6 +910,69 @@
 			};
 			name = Release;
 		};
+		847968C0DF66887F38C5D3C0 /* Direct */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 122;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 24UCS53598;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "VideoNotes transcribes your lecture on this device to build illustrated notes. Audio never leaves your device.";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Direct;
+		};
 		8FB1ADAFB54FEA30FBF4B2E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -868,6 +989,45 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoNotes.app/Contents/MacOS/VideoNotes";
 			};
 			name = Release;
+		};
+		A66B070EAC7796BC9EF19E7A /* Direct */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukemclaughlin.videonotes.ios.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "VideoNotes-iOS";
+			};
+			name = Direct;
+		};
+		A6D6D526C3C4E39F394DC7F5 /* Direct */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_KEY_CFBundleDisplayName = VideoNotes;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIFileSharingEnabled = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukemclaughlin.videonotes;
+				PRODUCT_NAME = VideoNotes;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Direct;
 		};
 		ABD826CAE53660EBC809C473 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -938,6 +1098,40 @@
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
+		};
+		AD3C61FB664F457BE33CD645 /* Direct */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukemclaughlin.videonotes.ios.storekit.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoNotes.app/VideoNotes";
+			};
+			name = Direct;
+		};
+		B4CCF05B4AF7DF44187C9F27 /* Direct */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lukemclaughlin.videonotes.macos.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoNotes.app/Contents/MacOS/VideoNotes";
+			};
+			name = Direct;
 		};
 		BF05D1519FBCC8A0942920F0 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1017,6 +1211,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F38B231AC6B2300C326BB65D /* Debug */,
+				A66B070EAC7796BC9EF19E7A /* Direct */,
 				155C3772827F72F0141CC3FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1026,6 +1221,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8154D50A774BB09E9702AD81 /* Debug */,
+				B4CCF05B4AF7DF44187C9F27 /* Direct */,
 				8FB1ADAFB54FEA30FBF4B2E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1035,6 +1231,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				606535FA80BF0D5B1D38447B /* Debug */,
+				6F13F0E3103A258724B691A6 /* Direct */,
 				BF05D1519FBCC8A0942920F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1044,6 +1241,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FFBA7061283C251048AA4B43 /* Debug */,
+				0431D138DCCC3659EA426D64 /* Direct */,
 				6F55E4BF4933569B892A37C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1053,6 +1251,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA0E9E749A7D1A14C4EA7999 /* Debug */,
+				318ECC07EFC78C3174FD6C01 /* Direct */,
 				690CA2E29817F56EBE61137E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1062,6 +1261,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0962ACF7B8B95781D31C4552 /* Debug */,
+				AD3C61FB664F457BE33CD645 /* Direct */,
 				0DFD97BBCC51E6F135DF56AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1071,6 +1271,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ABD826CAE53660EBC809C473 /* Debug */,
+				847968C0DF66887F38C5D3C0 /* Direct */,
 				82A417EC085666F984506982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1080,6 +1281,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B3541E0B07507E2EED14C1F /* Debug */,
+				A6D6D526C3C4E39F394DC7F5 /* Direct */,
 				101972FB6A1798A9584A4A83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
