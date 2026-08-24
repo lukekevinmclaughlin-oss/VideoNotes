@@ -3,17 +3,24 @@ import Accessibility
 import SketchnoteEngine
 import SwiftUI
 import UniformTypeIdentifiers
+#if !DIRECT_DISTRIBUTION
+import StoreKit
+#endif
 
 struct ContentView: View {
   @State private var showPaywall = false
   @EnvironmentObject private var model: StudioModel
   @EnvironmentObject private var purchase: PurchaseManager
-  @Environment(\.requestReview) private var requestReview
+  #if !DIRECT_DISTRIBUTION
+    @Environment(\.requestReview) private var requestReview
+  #endif
   @Environment(\.accessibilityReduceMotion) private var reduceMotion
   @Environment(\.dynamicTypeSize) private var dynamicTypeSize
   @AppStorage("hasShownIntroSubscriptionOffer") private var hasShownIntroSubscriptionOffer = false
   @AppStorage("completedAnalysisCount") private var completedAnalysisCount = 0
-  @AppStorage("hasRequestedReviewAfterAnalysis") private var hasRequestedReview = false
+  #if !DIRECT_DISTRIBUTION
+    @AppStorage("hasRequestedReviewAfterAnalysis") private var hasRequestedReview = false
+  #endif
   @State private var showImporter = false
   @State private var showPDFExporter = false
   @State private var showSemanticExporter = false
@@ -41,6 +48,9 @@ struct ContentView: View {
   ]
 
   var body: some View {
+    #if DIRECT_DISTRIBUTION
+      workspace
+    #else
     // Freemium: the workspace is always available; Pro gates volume, not entry.
     workspace
       .sheet(isPresented: $showPaywall) { PaywallView() }
@@ -49,6 +59,7 @@ struct ContentView: View {
         hasShownIntroSubscriptionOffer = true
         showPaywall = true
       }
+    #endif
   }
 
   private var workspace: some View {
@@ -209,6 +220,7 @@ struct ContentView: View {
       guard count > 0, !recordedCurrentAnalysis else { return }
       recordedCurrentAnalysis = true
       completedAnalysisCount += 1
+      #if !DIRECT_DISTRIBUTION
       if completedAnalysisCount >= 2, !hasRequestedReview {
         hasRequestedReview = true
         Task {
@@ -216,6 +228,7 @@ struct ContentView: View {
           requestReview()
         }
       }
+      #endif
     }
     .onChange(of: model.stageIndex) { _, index in
       guard model.phase == .analyzing || model.phase == .illustrating else { return }
