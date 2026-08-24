@@ -2,6 +2,7 @@ import SwiftUI
 
 struct PaywallView: View {
   @EnvironmentObject private var purchase: PurchaseManager
+  @Environment(\.dismiss) private var dismiss
 
   private let privacyURL = URL(
     string: "https://github.com/lukekevinmclaughlin-oss/VideoNotes/blob/main/PRIVACY.md")!
@@ -54,6 +55,9 @@ struct PaywallView: View {
           }
           .buttonStyle(GlassButtonStyle(tint: VNTheme.gold, prominent: true))
           .disabled(purchase.product == nil || purchase.isBusy || purchase.isLoadingProduct)
+
+          Button("Continue with 3 Free Analyses per Day") { dismiss() }
+            .buttonStyle(GlassButtonStyle(tint: VNTheme.cyan))
 
           Button("Restore Purchases") { Task { await purchase.restore() } }
             .buttonStyle(.plain)

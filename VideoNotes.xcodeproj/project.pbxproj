@@ -36,6 +36,7 @@
 		AFE99FF8716679749D5C14A8 /* StoreKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FD7EBFC4A54E1942F31E10 /* StoreKitTests.swift */; };
 		B3B3A1150C39640CDC62FDB8 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48DEDC34D6FB7BBC06DAC4E /* PurchaseManager.swift */; };
 		B3B4DDAE38B0C51AE7FC3A9F /* PatrickHand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AA336F69BE95F3C7017D2F6 /* PatrickHand-Regular.ttf */; };
+		B695E380E3CA604705D079F6 /* ImportDiagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762266845E42A1569040F4AC /* ImportDiagTests.swift */; };
 		B97CEE6EC4BC6B0F1EE10F30 /* Caveat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3429904AA9A696731628DBD9 /* Caveat-Bold.ttf */; };
 		C1E4B3656640BE44FD2E0D7A /* VideoNotes.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 263C6A14C26235E506A9B91A /* VideoNotes.storekit */; };
 		C2D6D9696CA62D132B7740E3 /* StudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039DFEACB9C4F7AAE3132DDF /* StudioModel.swift */; };
@@ -52,6 +53,7 @@
 		E4D22D8C8F0CC8EFD6535375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11DC8A5A546B257CE807006D /* Assets.xcassets */; };
 		E753F1122B5C0B83AB421699 /* OFL-ShantellSans.txt in Resources */ = {isa = PBXBuildFile; fileRef = D4A08FB731C77208D7D4F3FA /* OFL-ShantellSans.txt */; };
 		EBE0A5E1873F5038378CCE18 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DF6EA0CDB75F0476184EFB /* PaywallView.swift */; };
+		EE3352B062E2476925F487C4 /* ImportDiagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762266845E42A1569040F4AC /* ImportDiagTests.swift */; };
 		F75BAA92C6913F0FE222ECD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E56C42336CC848B6E31173D /* ContentView.swift */; };
 		FD58F1810E8159FA8ABA65DC /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = ADDB10A23EB7CECEA6A2427B /* PrivacyInfo.xcprivacy */; };
 		FE233889EC42AA68A04B194D /* GroundingAuditAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3638145AF6C7C2331CCC697 /* GroundingAuditAppTests.swift */; };
@@ -108,6 +110,7 @@
 		351FDC0A6CE9FB254C812A6A /* ShantellSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ShantellSans-Bold.ttf"; sourceTree = "<group>"; };
 		480BC8A9060839661B587692 /* Engine */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Engine; path = Engine; sourceTree = SOURCE_ROOT; };
 		6917CC74128AC3EF14AA085D /* SemanticExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemanticExport.swift; sourceTree = "<group>"; };
+		762266845E42A1569040F4AC /* ImportDiagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportDiagTests.swift; sourceTree = "<group>"; };
 		8C98312B7987333772569805 /* VideoNotes-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VideoNotes-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB4F73068B5DC976381FA20 /* VideoNotes-iOSUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "VideoNotes-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69BB785786E0CE849A99AE9 /* VideoNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoNotesApp.swift; sourceTree = "<group>"; };
@@ -202,6 +205,7 @@
 		AF7943979C1FDCEC0F9FB5E9 /* UITests */ = {
 			isa = PBXGroup;
 			children = (
+				762266845E42A1569040F4AC /* ImportDiagTests.swift */,
 				B089B4A532615FCAAB188F11 /* VideoNotesUITests.swift */,
 			);
 			name = UITests;
@@ -448,13 +452,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6C5EC5F8494DADC5F837E2B5 /* VideoNotes-iOS */,
-				BBDC50CA86A565E84864CAD5 /* VideoNotes-iOSStoreKitTests */,
-				25A937389363CB608373471A /* VideoNotes-iOSTests */,
-				40101330A975CF7820096799 /* VideoNotes-iOSUITests */,
 				32C02D39425A62EF9AD63A76 /* VideoNotes-macOS */,
+				6C5EC5F8494DADC5F837E2B5 /* VideoNotes-iOS */,
 				74BD2E41199F7A74BCB05780 /* VideoNotes-macOSTests */,
+				25A937389363CB608373471A /* VideoNotes-iOSTests */,
+				BBDC50CA86A565E84864CAD5 /* VideoNotes-iOSStoreKitTests */,
 				14E55DEA56E22E3EC0CB5264 /* VideoNotes-macOSUITests */,
+				40101330A975CF7820096799 /* VideoNotes-iOSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -535,6 +539,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B695E380E3CA604705D079F6 /* ImportDiagTests.swift in Sources */,
 				C8A95B5754E36F802CEA1EF3 /* VideoNotesUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,6 +587,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE3352B062E2476925F487C4 /* ImportDiagTests.swift in Sources */,
 				D219DEF9315B8253584949BC /* VideoNotesUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -818,7 +824,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 120;
+				CURRENT_PROJECT_VERSION = 122;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 24UCS53598;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -898,7 +904,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 120;
+				CURRENT_PROJECT_VERSION = 122;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 24UCS53598;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;

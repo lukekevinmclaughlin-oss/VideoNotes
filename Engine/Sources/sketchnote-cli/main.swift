@@ -103,7 +103,7 @@ Task {
             }
         }
         let style = RenderStyle(palette: .paperAndInk, seed: seed)
-        let renderer = PageRenderer()
+        let renderer = PlainNotesRenderer()
         let images = renderer.renderImages(document: document, style: style)
         for (i, image) in images.enumerated() {
             let data = PageRenderer.pngData(image)

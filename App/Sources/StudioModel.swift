@@ -438,19 +438,18 @@ final class StudioModel: ObservableObject {
     } else if phase != .analyzing {
       phase = .illustrating
     }
-    stageText = String(localized: "Illustrating your notes")
+    stageText = String(localized: "Composing your notes")
     scanProgress = nil
     stageIndex = 3
     renderTask?.cancel()
     renderTask = Task.detached(priority: .userInitiated) { [weak self] in
-      let renderer = PageRenderer()
-      let expectedPages = PagePlanner.plan(document, format: style.presentationFormat).count
+      let renderer = PlainNotesRenderer()
       // PageMetrics is already 1080×1920. Rendering at 1× keeps a
       // ten-page iPhone project near 83 MB instead of ~332 MB while the
       // PDF remains vector-resolution independent.
       let images = renderer.renderImages(document: document, style: style, scale: 1)
       guard !Task.isCancelled else { return }
-      guard images.count == expectedPages else {
+      guard !images.isEmpty else {
         await self?.publishRenderFailure(
           String(localized: "One or more note pages could not be rendered."), generation: gen,
           revision: revision)
@@ -934,7 +933,7 @@ final class StudioModel: ObservableObject {
     case .structuring:
       return String(localized: "Structuring the notes")
     case .illustrating:
-      return String(localized: "Illustrating your notes")
+      return String(localized: "Composing your notes")
     }
   }
 
